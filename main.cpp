@@ -2,10 +2,10 @@
 #include <QQmlApplicationEngine>
 #include <QDebug>
 
-#include "LanguageModel.h"
-#include "Keyboard.h"
-#include "KeyboardLayer.h"
-#include "KeyboardRow.h"
+#include "src/LanguageModel.h"
+#include "src/Keyboard.h"
+#include "src/KeyboardLayer.h"
+#include "src/KeyboardRow.h"
 
 int main(int argc, char *argv[])
 {

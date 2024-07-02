@@ -5,11 +5,11 @@ QT += quick
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        Keyboard.cpp \
-        KeyboardKey.cpp \
-        KeyboardLayer.cpp \
-        KeyboardRow.cpp \
-        LanguageModel.cpp \
+        src\Keyboard.cpp \
+        src\KeyboardKey.cpp \
+        src\KeyboardLayer.cpp \
+        src\KeyboardRow.cpp \
+        src\LanguageModel.cpp \
         main.cpp
 
 RESOURCES += qml.qrc \
@@ -27,8 +27,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    Keyboard.h \
-    KeyboardKey.h \
-    KeyboardLayer.h \
-    KeyboardRow.h \
-    LanguageModel.h
+    src\Keyboard.h \
+    src\KeyboardKey.h \
+    src\KeyboardLayer.h \
+    src\KeyboardRow.h \
+    src\LanguageModel.h
