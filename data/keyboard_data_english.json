@@ -1,0 +1,196 @@
+{
+    "row1": [
+        { "text": "-", "key": "Qt.Key_Minus" },
+        { "text": ".", "key": "Qt.Key_Period" },
+        { "text": ",", "key": "Qt.Key_Comma" },
+        { "text": ":", "key": "Qt.Key_Colon" },
+        { "text": "&", "key": "Qt.Key_Ampersand" },
+        { "text": "%", "key": "Qt.Key_Percent" },
+        { "text": "'", "key": "Qt.Key_Apostrophe" },
+        { "text": "(", "key": "Qt.Key_ParenLeft" },
+        { "text": ")", "key": "Qt.Key_ParenRight" },
+        { "text": "+", "key": "Qt.Key_Plus" }
+    ],
+    "row2": [
+        { "text": "1", "key": "Qt.Key_1" },
+        { "text": "2", "key": "Qt.Key_2" },
+        { "text": "3", "key": "Qt.Key_3" },
+        { "text": "4", "key": "Qt.Key_4" },
+        { "text": "5", "key": "Qt.Key_5" },
+        { "text": "6", "key": "Qt.Key_6" },
+        { "text": "7", "key": "Qt.Key_7" },
+        { "text": "8", "key": "Qt.Key_8" },
+        { "text": "9", "key": "Qt.Key_9" },
+        { "text": "0", "key": "Qt.Key_0" }
+    ],
+    "row3": [
+        {
+            "text": "q",
+            "key": "Qt.Key_Q",
+            "alternativeUpperCaseKey": "Q",
+            "alternativeLowerCaseKey": "q"
+        },
+        {
+            "text": "w",
+            "key": "Qt.Key_W",
+            "alternativeUpperCaseKey": "W",
+            "alternativeLowerCaseKey": "w"
+        },
+        {
+            "text": "e",
+            "key": "Qt.Key_E",
+            "alternativeUpperCaseKey": "E",
+            "alternativeLowerCaseKey": "e"
+        },
+        {
+            "text": "r",
+            "key": "Qt.Key_R",
+            "alternativeUpperCaseKey": "R",
+            "alternativeLowerCaseKey": "r"
+        },
+        {
+            "text": "t",
+            "key": "Qt.Key_T",
+            "alternativeUpperCaseKey": "T",
+            "alternativeLowerCaseKey": "t"
+        },
+        {
+            "text": "y",
+            "key": "Qt.Key_Y",
+            "alternativeUpperCaseKey": "Y",
+            "alternativeLowerCaseKey": "y"
+        },
+        {
+            "text": "u",
+            "key": "Qt.Key_U",
+            "alternativeUpperCaseKey": "U",
+            "alternativeLowerCaseKey": "u"
+        },
+        {
+            "text": "i",
+            "key": "Qt.Key_I",
+            "alternativeUpperCaseKey": "I",
+            "alternativeLowerCaseKey": "i"
+        },
+        {
+            "text": "o",
+            "key": "Qt.Key_O",
+            "alternativeUpperCaseKey": "O",
+            "alternativeLowerCaseKey": "o"
+        },
+        {
+            "text": "p",
+            "key": "Qt.Key_P",
+            "alternativeUpperCaseKey": "P",
+            "alternativeLowerCaseKey": "p"
+        }
+    ],
+    "row4": [
+        {
+            "text": "a",
+            "key": "Qt.Key_A",
+            "alternativeUpperCaseKey": "A",
+            "alternativeLowerCaseKey": "a"
+        },
+        {
+            "text": "s",
+            "key": "Qt.Key_S",
+            "alternativeUpperCaseKey": "S",
+            "alternativeLowerCaseKey": "s"
+        },
+        {
+            "text": "d",
+            "key": "Qt.Key_D",
+            "alternativeUpperCaseKey": "D",
+            "alternativeLowerCaseKey": "d"
+        },
+        {
+            "text": "f",
+            "key": "Qt.Key_F",
+            "alternativeUpperCaseKey": "F",
+            "alternativeLowerCaseKey": "f"
+        },
+        {
+            "text": "g",
+            "key": "Qt.Key_G",
+            "alternativeUpperCaseKey": "G",
+            "alternativeLowerCaseKey": "g"
+        },
+        {
+            "text": "h",
+            "key": "Qt.Key_H",
+            "alternativeUpperCaseKey": "H",
+            "alternativeLowerCaseKey": "h"
+        },
+        {
+            "text": "j",
+            "key": "Qt.Key_J",
+            "alternativeUpperCaseKey": "J",
+            "alternativeLowerCaseKey": "j"
+        },
+        {
+            "text": "k",
+            "key": "Qt.Key_K",
+            "alternativeUpperCaseKey": "K",
+            "alternativeLowerCaseKey": "k"
+        },
+        {
+            "text": "l",
+            "key": "Qt.Key_L",
+            "alternativeUpperCaseKey": "L",
+            "alternativeLowerCaseKey": "l"
+        }
+    ],
+    "row5": [
+        {
+            "text": "z",
+            "key": "Qt.Key_Z",
+            "alternativeUpperCaseKey": "Z",
+            "alternativeLowerCaseKey": "z"
+        },
+        {
+            "text": "x",
+            "key": "Qt.Key_X",
+            "alternativeUpperCaseKey": "X",
+            "alternativeLowerCaseKey": "x"
+        },
+        {
+            "text": "c",
+            "key": "Qt.Key_C",
+            "alternativeUpperCaseKey": "C",
+            "alternativeLowerCaseKey": "c"
+        },
+        {
+            "text": "v",
+            "key": "Qt.Key_V",
+            "alternativeUpperCaseKey": "V",
+            "alternativeLowerCaseKey": "v"
+        },
+        {
+            "text": "b",
+            "key": "Qt.Key_B",
+            "alternativeUpperCaseKey": "B",
+            "alternativeLowerCaseKey": "b"
+        },
+        {
+            "text": "n",
+            "key": "Qt.Key_N",
+            "alternativeUpperCaseKey": "N",
+            "alternativeLowerCaseKey": "n"
+        },
+        {
+            "text": "m",
+            "key": "Qt.Key_M",
+            "alternativeUpperCaseKey": "M",
+            "alternativeLowerCaseKey": "m"
+        },
+        { "text": "\u2190", "key": "Qt.Key_Backspace" }
+    ],
+    "row6": [
+        { "text": "\u2191", "key": "caps_toggle" },
+        { "text": "123", "key": "Qt.Key_1" },
+        { "text": "Space", "key": "Qt.Key_Space" },
+        { "text": "Enter", "key": "Qt.Key_Return" },
+        { "text": "Lang", "key": "Qt.Key_Language" }
+    ]
+}

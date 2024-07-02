@@ -1,0 +1,71 @@
+{
+    "row1": [
+        { "text": "ذ", "key": "Qt.Key_Arabic_Thal", "alternativeUpperCaseKey": "ذ", "alternativeLowerCaseKey": "ذ" },
+        { "text": "١", "key": "Qt.Key_1" },
+        { "text": "٢", "key": "Qt.Key_2" },
+        { "text": "٣", "key": "Qt.Key_3" },
+        { "text": "٤", "key": "Qt.Key_4" },
+        { "text": "٥", "key": "Qt.Key_5" },
+        { "text": "٦", "key": "Qt.Key_6" },
+        { "text": "٧", "key": "Qt.Key_7" },
+        { "text": "٨", "key": "Qt.Key_8" },
+        { "text": "٩", "key": "Qt.Key_9" },
+        { "text": "٠", "key": "Qt.Key_0" },
+        { "text": "-", "key": "Qt.Key_Minus" }
+    ],
+    "row2": [
+        { "text": "ض", "key": "Qt.Key_Arabic_Dad", "alternativeUpperCaseKey": "ض", "alternativeLowerCaseKey": "ض" },
+        { "text": "ص", "key": "Qt.Key_Arabic_Sad", "alternativeUpperCaseKey": "ص", "alternativeLowerCaseKey": "ص" },
+        { "text": "ث", "key": "Qt.Key_Arabic_The", "alternativeUpperCaseKey": "ث", "alternativeLowerCaseKey": "ث" },
+        { "text": "ق", "key": "Qt.Key_Arabic_Qaf", "alternativeUpperCaseKey": "ق", "alternativeLowerCaseKey": "ق" },
+        { "text": "ف", "key": "Qt.Key_Arabic_Fa", "alternativeUpperCaseKey": "ف", "alternativeLowerCaseKey": "ف" },
+        { "text": "غ", "key": "Qt.Key_Arabic_Ghain", "alternativeUpperCaseKey": "غ", "alternativeLowerCaseKey": "غ" },
+        { "text": "ع", "key": "Qt.Key_Arabic_Ain", "alternativeUpperCaseKey": "ع", "alternativeLowerCaseKey": "ع" },
+        { "text": "ه", "key": "Qt.Key_Arabic_Hah", "alternativeUpperCaseKey": "ه", "alternativeLowerCaseKey": "ه" },
+        { "text": "خ", "key": "Qt.Key_Arabic_Khah", "alternativeUpperCaseKey": "خ", "alternativeLowerCaseKey": "خ" },
+        { "text": "ح", "key": "Qt.Key_Arabic_Hah", "alternativeUpperCaseKey": "ح", "alternativeLowerCaseKey": "ح" },
+        { "text": "ج", "key": "Qt.Key_Arabic_Jeem", "alternativeUpperCaseKey": "ج", "alternativeLowerCaseKey": "ج" },
+        { "text": "د", "key": "Qt.Key_Arabic_Dal", "alternativeUpperCaseKey": "د", "alternativeLowerCaseKey": "د" }
+    ],
+    "row3": [
+        { "text": "ش", "key": "Qt.Key_Arabic_Sheen", "alternativeUpperCaseKey": "ش", "alternativeLowerCaseKey": "ش" },
+        { "text": "س", "key": "Qt.Key_Arabic_Seen", "alternativeUpperCaseKey": "س", "alternativeLowerCaseKey": "س" },
+        { "text": "ي", "key": "Qt.Key_Arabic_Yeh", "alternativeUpperCaseKey": "ي", "alternativeLowerCaseKey": "ي" },
+        { "text": "ب", "key": "Qt.Key_Arabic_Beh", "alternativeUpperCaseKey": "ب", "alternativeLowerCaseKey": "ب" },
+        { "text": "ل", "key": "Qt.Key_Arabic_Lam", "alternativeUpperCaseKey": "ل", "alternativeLowerCaseKey": "ل" },
+        { "text": "ا", "key": "Qt.Key_Arabic_Alef", "alternativeUpperCaseKey": "ا", "alternativeLowerCaseKey": "ا" },
+        { "text": "ت", "key": "Qt.Key_Arabic_Teh", "alternativeUpperCaseKey": "ت", "alternativeLowerCaseKey": "ت" },
+        { "text": "ن", "key": "Qt.Key_Arabic_Nun", "alternativeUpperCaseKey": "ن", "alternativeLowerCaseKey": "ن" },
+        { "text": "م", "key": "Qt.Key_Arabic_Meem", "alternativeUpperCaseKey": "م", "alternativeLowerCaseKey": "م" },
+        { "text": "ك", "key": "Qt.Key_Arabic_Kaf", "alternativeUpperCaseKey": "ك", "alternativeLowerCaseKey": "ك" },
+        { "text": "ط", "key": "Qt.Key_Arabic_Teh", "alternativeUpperCaseKey": "ط", "alternativeLowerCaseKey": "ط" }
+    ],
+    "row4": [
+        { "text": "ئ", "key": "Qt.Key_Arabic_HamzaAbove", "alternativeUpperCaseKey": "ئ", "alternativeLowerCaseKey": "ئ" },
+        { "text": "ء", "key": "Qt.Key_Arabic_Hamza", "alternativeUpperCaseKey": "ء", "alternativeLowerCaseKey": "ء" },
+        { "text": "ؤ", "key": "Qt.Key_Arabic_Hamza", "alternativeUpperCaseKey": "ؤ", "alternativeLowerCaseKey": "ؤ" },
+        { "text": "ر", "key": "Qt.Key_Arabic_Rah", "alternativeUpperCaseKey": "ر", "alternativeLowerCaseKey": "ر" },
+        { "text": "ى", "key": "Qt.Key_Arabic_AlefMaksura", "alternativeUpperCaseKey": "ى", "alternativeLowerCaseKey": "ى" },
+        { "text": "ة", "key": "Qt.Key_Arabic_TehMarbuta", "alternativeUpperCaseKey": "ة", "alternativeLowerCaseKey": "ة" },
+        { "text": "و", "key": "Qt.Key_Arabic_Waw", "alternativeUpperCaseKey": "و", "alternativeLowerCaseKey": "و" },
+        { "text": "ز", "key": "Qt.Key_Arabic_Zain", "alternativeUpperCaseKey": "ز", "alternativeLowerCaseKey": "ز" },
+        { "text": "ظ", "key": "Qt.Key_Arabic_Thal", "alternativeUpperCaseKey": "ظ", "alternativeLowerCaseKey": "ظ" }
+    ],
+    "row5": [
+        { "text": "ذ", "key": "Qt.Key_Arabic_Thal", "alternativeUpperCaseKey": "ذ", "alternativeLowerCaseKey": "ذ" },
+        { "text": "إ", "key": "Qt.Key_Arabic_AlefHamzaAbove", "alternativeUpperCaseKey": "إ", "alternativeLowerCaseKey": "إ" },
+        { "text": "أ", "key": "Qt.Key_Arabic_AlefHamzaAbove", "alternativeUpperCaseKey": "أ", "alternativeLowerCaseKey": "أ" },
+        { "text": "آ", "key": "Qt.Key_Arabic_AlefMaddaAbove", "alternativeUpperCaseKey": "آ", "alternativeLowerCaseKey": "آ" },
+        { "text": "ؤ", "key": "Qt.Key_Arabic_WawHamzaAbove", "alternativeUpperCaseKey": "ؤ", "alternativeLowerCaseKey": "ؤ" },
+        { "text": "ئ", "key": "Qt.Key_Arabic_YehHamzaAbove", "alternativeUpperCaseKey": "ئ", "alternativeLowerCaseKey": "ئ" },
+        { "text": "ء", "key": "Qt.Key_Arabic_Hamza", "alternativeUpperCaseKey": "ء", "alternativeLowerCaseKey": "ء" },
+        { "text": "\u2190", "key": "Qt.Key_Backspace" }
+    ],
+    "row6": [
+        { "text": "\u2191", "key": "caps_toggle" },
+        { "text": "123", "key": "Qt.Key_1" },
+        { "text": "Space", "key": "Qt.Key_Space" },
+        { "text": "Enter", "key": "Qt.Key_Return" },
+        { "text": "Lang", "key": "Qt.Key_Language" }
+    ]
+}

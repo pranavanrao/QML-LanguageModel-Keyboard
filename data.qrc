@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/keyboard_data_arabic.json</file>
+        <file>data/keyboard_data_english.json</file>
+        <file>data/keyboard_data_german.json</file>
+        <file>data/keyboard_data_japanese.json</file>
+        <file>data/languages_data.json</file>
+    </qresource>
+</RCC>
