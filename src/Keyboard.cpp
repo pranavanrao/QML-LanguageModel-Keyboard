@@ -6,6 +6,7 @@ Keyboard::Keyboard(QObject *parent)
     : QObject{parent}
 {
     m_layers["layer1"] = new KeyboardLayer(this);
+    m_layers["layer2"] = new KeyboardLayer(this);
 }
 
 void Keyboard::printKeyBoardLayers() const

@@ -1,5 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QJsonDocument>
+#include <QFile>
 #include <QDebug>
 
 #include "src/LanguageModel.h"
@@ -14,11 +16,21 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
+    QFile file(":/data/languages_data.json");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Failed to open languages_data.json";
+        return -1;
+    }
+
+    QByteArray jsonData = file.readAll();
+    QJsonDocument doc(QJsonDocument::fromJson(jsonData));
+    QJsonObject jsonObject = doc.object();
+
     LanguageModel languageModel;
     Keyboard keyboard;
     KeyboardLayer keyboardLayers;
     KeyboardRow keyboardRows;
-
+    languageModel.initializeFromJson(jsonObject);
     languageModel.printKeyboards();
     keyboard.printKeyBoardLayers();
     keyboardLayers.printKeyboardRows();

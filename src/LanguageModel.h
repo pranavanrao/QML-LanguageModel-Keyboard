@@ -15,6 +15,8 @@ class LanguageModel : public QObject
 public:
     explicit LanguageModel(QObject *parent = nullptr);
 
+    void initializeFromJson(const QJsonObject& json);
+    Keyboard *getKeyboard(const QString& language) const;
     void printKeyboards() const;
 
 signals:
@@ -22,8 +24,6 @@ signals:
 
 private:
     QMap<LANGUAGE, Keyboard*> m_keyboards;
-
-    void loadFromJson(const QString &fileName);
 };
 
 #endif // LANGUAGEMODEL_H

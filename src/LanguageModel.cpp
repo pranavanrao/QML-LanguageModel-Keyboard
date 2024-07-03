@@ -8,26 +8,24 @@
 
 LanguageModel::LanguageModel(QObject *parent)
     : QObject{parent}
+{}
+
+void LanguageModel::initializeFromJson(const QJsonObject& json)
 {
-    loadFromJson(":/data/languages_data.json");
-}
-
-void LanguageModel::loadFromJson(const QString &fileName)
-{
-    QFile file(fileName);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Failed to open file" << fileName;
-        return;
-    }
-
-    QByteArray jsonData = file.readAll();
-    QJsonDocument doc(QJsonDocument::fromJson(jsonData));
-    QJsonObject jsonObject = doc.object();
-
-    QJsonArray languagesArray = jsonObject["languages"].toArray();
+    QJsonArray languagesArray = json["languages"].toArray();
     for (const QJsonValue& value : languagesArray) {
         QString language = value.toString();
         m_keyboards[language] = new Keyboard(this);
+    }
+}
+
+Keyboard *LanguageModel::getKeyboard(const QString &language) const
+{
+    if (m_keyboards.contains(language)) {
+        return m_keyboards[language];
+    } else {
+        qDebug() << "Keyboard for" << language << "not found";
+        return nullptr;
     }
 }
 
