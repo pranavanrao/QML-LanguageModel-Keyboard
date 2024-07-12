@@ -1,17 +1,23 @@
 #include "KeyboardRow.h"
 
 #include <QDebug>
+#include <QJsonArray>
+#include <QJsonObject>
 
 KeyboardRow::KeyboardRow(QObject *parent)
     : QObject{parent}
+{}
+
+void KeyboardRow::initializeFromJson(const QJsonArray &json)
 {
-    addKey("Q", "Qt.Key_Q", "Q", "q");
-    addKey("W", "Qt.Key_W", "W", "w");
-    addKey("E", "Qt.Key_E", "E", "e");
-    addKey("R", "Qt.Key_R", "R", "r");
-    addKey("T", "Qt.Key_T", "T", "t");
-    addKey("Y", "Qt.Key_Y", "Y", "y");
-    addKey("U", "Qt.Key_U", "U", "u");
+    for (const QJsonValue &value : json) {
+        QJsonObject keyObject = value.toObject();
+        QString text = keyObject["text"].toString();
+        QString key = keyObject["key"].toString();
+        QString altUpperKey = keyObject["alternativeUpperCaseKey"].toString();
+        QString altLowerKey = keyObject["alternativeLowerCaseKey"].toString();
+        addKey(text, key, altUpperKey, altLowerKey);
+    }
 }
 
 void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey)

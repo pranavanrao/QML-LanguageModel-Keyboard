@@ -14,6 +14,7 @@ class KeyboardRow : public QObject
 public:
     explicit KeyboardRow(QObject *parent = nullptr);
     void addKey(const QString &text, const QString &key, const QString &altUpperKey = "", const QString &altLowerKey = "");
+    void initializeFromJson(const QJsonArray &json);
     void printKeyboardKeys() const;
 
 signals:

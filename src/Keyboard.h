@@ -13,7 +13,7 @@ class Keyboard : public QObject
 
 public:
     explicit Keyboard(QObject *parent = nullptr);
-
+    void initializeFromJson(const QJsonObject &json);
     void printKeyBoardLayers() const;
 
 signals:

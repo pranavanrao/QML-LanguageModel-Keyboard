@@ -6,8 +6,6 @@
 
 #include "src/LanguageModel.h"
 #include "src/Keyboard.h"
-#include "src/KeyboardLayer.h"
-#include "src/KeyboardRow.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,7 +14,9 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
-    QFile file(":/data/languages_data.json");
+    QString languageFileName = ":/data/languages_data.json";
+
+    QFile file(languageFileName);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qWarning() << "Failed to open languages_data.json";
         return -1;
@@ -28,13 +28,14 @@ int main(int argc, char *argv[])
 
     LanguageModel languageModel;
     Keyboard keyboard;
-    KeyboardLayer keyboardLayers;
-    KeyboardRow keyboardRows;
+    KeyboardLayer keyboardLayer;
+
+    // Printing the LanguageModel
     languageModel.initializeFromJson(jsonObject);
     languageModel.printKeyboards();
+
+    // Printing the Keyboard
     keyboard.printKeyBoardLayers();
-    keyboardLayers.printKeyboardRows();
-    keyboardRows.printKeyboardKeys();
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));

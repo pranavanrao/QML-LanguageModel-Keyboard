@@ -34,6 +34,7 @@ void LanguageModel::printKeyboards() const
     qDebug() << "All Language Keyboards available :";
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
         qDebug() << it.key();
+        // it.value()->printKeyBoardLayers();
     }
     qDebug() << Qt::endl;
 }
