@@ -3,6 +3,7 @@
 #include <QJsonDocument>
 #include <QFile>
 #include <QDebug>
+#include <QQmlContext>
 
 #include "src/LanguageModel.h"
 #include "src/Keyboard.h"
@@ -14,9 +15,12 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
-    QString languageFileName = ":/data/languages_data.json";
+    QString keyboardEnglish = ":/data/languages_data.json";
+    QString keyboardArabic = ":/data/keyboard_data_arabic.json";
+    QString keyboardGerman = ":/data/keyboard_data_german.json";
+    QString keyboardJapanese = ":/data/keyboard_data_japanese.json";
 
-    QFile file(languageFileName);
+    QFile file(keyboardEnglish);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qWarning() << "Failed to open languages_data.json";
         return -1;
