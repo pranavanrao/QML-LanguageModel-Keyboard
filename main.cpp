@@ -15,29 +15,12 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
-    QString keyboardEnglish = ":/data/languages_data.json";
-    QString keyboardArabic = ":/data/keyboard_data_arabic.json";
-    QString keyboardGerman = ":/data/keyboard_data_german.json";
-    QString keyboardJapanese = ":/data/keyboard_data_japanese.json";
-
-    QFile file(keyboardEnglish);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Failed to open languages_data.json";
-        return -1;
-    }
-
-    QByteArray jsonData = file.readAll();
-    QJsonDocument doc(QJsonDocument::fromJson(jsonData));
-    QJsonObject jsonObject = doc.object();
-
     LanguageModel languageModel;
     Keyboard keyboard;
     KeyboardLayer keyboardLayer;
 
     // Printing the LanguageModel
-    languageModel.initializeFromJson(jsonObject);
     languageModel.printKeyboards();
-
     // Printing the Keyboard
     keyboard.printKeyBoardLayers();
 

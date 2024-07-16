@@ -8,7 +8,20 @@
 
 LanguageModel::LanguageModel(QObject *parent)
     : QObject{parent}
-{}
+{
+    QString filename = ":/data/languages_data.json";
+    QFile file(filename);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Failed to open" << filename;
+        return;
+    }
+
+    QByteArray jsonData = file.readAll();
+    QJsonDocument doc(QJsonDocument::fromJson(jsonData));
+    QJsonObject jsonObject = doc.object();
+
+    initializeFromJson(jsonObject);
+}
 
 void LanguageModel::initializeFromJson(const QJsonObject& json)
 {
