@@ -42,3 +42,13 @@ void Keyboard::printKeyBoardLayers() const
     }
     qDebug() << Qt::endl;
 }
+
+QVariantList Keyboard::parseKeyboardLayers() const
+{
+    QVariantList list;
+    for (auto it = m_layers.constBegin(); it != m_layers.constEnd(); ++it) {
+        list.append(it.key());
+        qDebug() << "Layers : " << it.key();
+    }
+    return list;
+}

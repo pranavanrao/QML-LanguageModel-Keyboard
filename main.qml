@@ -13,6 +13,10 @@ Window {
         id: languages
     }
 
+    KeyboardData {
+        id: keyboard
+    }
+
     Column {
         spacing: 2
         anchors.fill: parent
@@ -24,6 +28,16 @@ Window {
 
             onActivated: {
                 console.log("Selected language:", languageComboBox.currentText)
+            }
+        }
+
+        ComboBox {
+            id: keyboardComboBox
+            width: parent.width
+            model: keyboard.parseKeyboardLayers()
+
+            onActivated: {
+                console.log("Selected layers:", keyboardComboBox.currentText)
             }
         }
     }

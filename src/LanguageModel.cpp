@@ -56,7 +56,7 @@ QVariantList LanguageModel::parseKeyboards() const {
     QVariantList list;
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
         list.append(it.key());
-        qDebug() << "Languages : " << it.key(); // Ensure this prints expected languages
+        qDebug() << "Languages : " << it.key();
     }
     return list;
 }

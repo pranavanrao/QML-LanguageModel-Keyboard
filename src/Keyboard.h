@@ -4,6 +4,7 @@
 #include "KeyboardLayer.h"
 
 #include <QObject>
+#include <QVariantList>
 #include <QMap>
 
 class Keyboard : public QObject
@@ -13,8 +14,11 @@ class Keyboard : public QObject
 
 public:
     explicit Keyboard(QObject *parent = nullptr);
+
     void initializeFromJson(const QJsonObject &json);
     void printKeyBoardLayers() const;
+
+    Q_INVOKABLE QVariantList parseKeyboardLayers() const;
 
 signals:
 
