@@ -15,9 +15,12 @@ class LanguageModel : public QObject
 public:
     explicit LanguageModel(QObject *parent = nullptr);
 
-    void initializeFromJson(const QJsonObject& json);
     Keyboard *getKeyboard(const QString& language) const;
+
+    void initializeFromJson(const QJsonObject& json);
     void printKeyboards() const;
+
+    Q_INVOKABLE QVariantList parseKeyboards() const;
 
 signals:
     void keyboardsChanged();

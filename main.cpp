@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 #endif
     QGuiApplication app(argc, argv);
 
+    qmlRegisterType<LanguageModel>("VirtualKeyboard", 1, 0, "LanguageData");
+
     LanguageModel languageModel;
     Keyboard keyboard;
     KeyboardLayer keyboardLayer;
