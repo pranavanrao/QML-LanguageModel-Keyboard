@@ -19,11 +19,17 @@ public:
     void printKeyBoardLayers() const;
 
     Q_INVOKABLE QVariantList parseKeyboardLayers() const;
+    Q_INVOKABLE QVariantList parseKeyboardRows() const;
+    Q_INVOKABLE QVariantList parseKeyboardKeys() const;
+
+    Q_INVOKABLE void setLanguage(const QString &language);
+    Q_INVOKABLE void setLayer(const QString &layer);
 
 signals:
 
 private:
     QMap<LAYERS, KeyboardLayer*> m_layers;
+    QString m_currentLayer;
 };
 
 #endif // KEYBOARD_H

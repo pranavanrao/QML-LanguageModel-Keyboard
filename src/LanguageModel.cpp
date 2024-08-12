@@ -21,6 +21,11 @@ LanguageModel::LanguageModel(QObject *parent)
     QJsonObject jsonObject = doc.object();
 
     initializeFromJson(jsonObject);
+
+    // Set the default language to English
+    if (m_keyboards.contains("english")) {
+        m_keyboards["english"]->setLanguage("english"); // Assuming setLanguage sets the keyboard to English
+    }
 }
 
 void LanguageModel::initializeFromJson(const QJsonObject& json)

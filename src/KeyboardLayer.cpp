@@ -28,3 +28,27 @@ void KeyboardLayer::printKeyboardRows() const
     }
     qDebug() << Qt::endl;
 }
+
+QMap<QString, KeyboardRow *> KeyboardLayer::rows() const
+{
+    return m_rows;
+}
+
+KeyboardRow *KeyboardLayer::getRow(const QString &rowName) const
+{
+    if (m_rows.contains(rowName)) {
+        return m_rows[rowName]; // Return the KeyboardRow associated with the rowName
+    } else {
+        qWarning() << "Row" << rowName << "not found"; // Log a warning if the row is not found
+        return nullptr; // Return nullptr if the row does not exist
+    }
+}
+
+QVariantList KeyboardLayer::getRowKeys() const
+{
+    QVariantList rowKeysList;
+    for (const auto& row : m_rows.keys()) {
+        rowKeysList.append(row); // Append row keys in the order they were added
+    }
+    return rowKeysList;
+}

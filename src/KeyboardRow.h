@@ -4,7 +4,7 @@
 #include "KeyboardKey.h"
 
 #include <QObject>
-#include <QMap>
+#include <QList>
 
 class KeyboardRow : public QObject
 {
@@ -17,10 +17,13 @@ public:
     void initializeFromJson(const QJsonArray &json);
     void printKeyboardKeys() const;
 
+    QList<KeyboardKey*> keys() const;
+    QVariantList getKeys() const;
+
 signals:
 
 private:
-    QMap<KEYS, KeyboardKey*> m_key;
+    QList<KeyboardKey*> m_keys;
 };
 
 #endif // KEYBOARDROW_H

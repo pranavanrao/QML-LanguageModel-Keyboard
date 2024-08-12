@@ -1,5 +1,8 @@
 {
     "languages": [
-        "English", "Arabic", "Japanese", "German"
+        "english",
+        "arabic",
+        "german",
+        "japanese"
     ]
 }

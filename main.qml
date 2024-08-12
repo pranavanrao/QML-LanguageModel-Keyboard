@@ -25,9 +25,13 @@ Window {
             id: languageComboBox
             width: parent.width
             model: languages.parseKeyboards()
+            currentIndex: 1
 
             onActivated: {
                 console.log("Selected language:", languageComboBox.currentText)
+                keyboard.setLanguage(languageComboBox.currentText)
+                keyboardComboBox.model = keyboard.parseKeyboardLayers()
+                keyGridRepeater.model = keyboard.parseKeyboardKeys()
             }
         }
 
@@ -38,7 +42,41 @@ Window {
 
             onActivated: {
                 console.log("Selected layers:", keyboardComboBox.currentText)
+                keyboard.setLayer(keyboardComboBox.currentText)
+                keyGridRepeater.model = keyboard.parseKeyboardKeys();
             }
         }
+
+        Grid {
+            id: keyGrid
+            width: parent.width
+            rows: 4
+            spacing: 5
+
+            Repeater {
+                id: keyGridRepeater
+                model: keyboard.parseKeyboardKeys()
+
+                delegate: Rectangle {
+                    width: 60
+                    height: 60
+                    color: "lightgray"
+                    border.color: "black"
+                    radius: 5
+
+                    Text {
+                        anchors.centerIn: parent
+                        text: modelData
+                        font.pixelSize: 20
+                    }
+                }
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        keyboard.setLanguage(languageComboBox.currentText)
+        keyboardComboBox.model = keyboard.parseKeyboardLayers()
+        keyGrid.model = keyboard.parseKeyboardKeys()
     }
 }

@@ -16,6 +16,11 @@ public:
     void initializeFromJson(const QJsonObject &json);
     void printKeyboardRows() const;
 
+    QMap<QString, KeyboardRow*> rows() const;
+    KeyboardRow *getRow(const QString &rowName) const;
+
+    QVariantList getRowKeys() const;
+
 signals:
 
 private:

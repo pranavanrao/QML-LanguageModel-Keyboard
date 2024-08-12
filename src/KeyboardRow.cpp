@@ -22,21 +22,35 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
 
 void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey)
 {
-    m_key[text] = new KeyboardKey(text, key, altUpperKey, altLowerKey, this);
+    m_keys.append(new KeyboardKey(text, key, altUpperKey, altLowerKey, this));
 }
 
 void KeyboardRow::printKeyboardKeys() const
 {
     qDebug() << "Printing all keys :";
-    for (auto it = m_key.constBegin(); it != m_key.constEnd(); ++it) {
+    for (const KeyboardKey* key : m_keys) { // Iterate over the list of keys
         qDebug() << "Key text: "
-                 << it.key()
+                 << key->text()
                  << ", Key code: "
-                 << it.value()->key()
+                 << key->key()
                  << ", Upper Case: "
-                 << it.value()->alternativeUpperCaseKey()
+                 << key->alternativeUpperCaseKey()
                  << ", Lower Case: "
-                 << it.value()->alternativeLowerCaseKey();
+                 << key->alternativeLowerCaseKey();
     }
     qDebug() << Qt::endl;
+}
+
+QList<KeyboardKey *> KeyboardRow::keys() const
+{
+    return m_keys;
+}
+
+QVariantList KeyboardRow::getKeys() const
+{
+    QVariantList keysList;
+    for (const auto& key : m_keys) {
+        keysList.append(key->text()); // Assuming KeyboardKey has a text() method
+    }
+    return keysList;
 }
