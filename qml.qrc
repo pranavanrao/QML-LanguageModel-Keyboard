@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>components/Key.qml</file>
+        <file>components/KeyBoard.qml</file>
     </qresource>
 </RCC>
