@@ -4,7 +4,7 @@ import QtQuick.Controls 2.15
 import VirtualKeyboard 1.0
 
 Window {
-    width: 640
+    width: 800
     height: 480
     visible: true
     title: qsTr("Virtual Keyboard")
@@ -22,33 +22,57 @@ Window {
         anchors.fill: parent
         anchors.margins: 50
 
-        Grid {
-            id: keyGrid
-            rows: 4
-            spacing: 5
+        Column {
+            id: keyboardColumn
+            spacing: 10
+
             anchors.horizontalCenter: parent.horizontalCenter
 
-            Repeater {
-                id: keyGridRepeater
-                model: keyboard.parseKeyboardKeys()
+            // First Row
+            Row {
+                id: firstRow
+                spacing: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                Repeater {
+                    id: firstRowModel
+                    model: keyboard.parseKeyboardKeysRow1()  // Access the first row's keys
+                    delegate: Key {}
+                }
+            }
 
-                delegate: Rectangle {
-                    width: modelData.width
-                    height: modelData.height
-                    color: modelData.color
-                    radius: 5
+            // Second Row
+            Row {
+                id: secondRow
+                spacing: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                Repeater {
+                    id: secondRowModel
+                    model: keyboard.parseKeyboardKeysRow2() // Access the second row's keys
+                    delegate: Key {}
+                }
+            }
 
-                    Text {
-                        anchors.centerIn: parent
-                        text: modelData.text
-                        font.pixelSize: 24
-                        color: "white"
-                    }
+            // Third Row
+            Row {
+                id: thirdRow
+                spacing: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                Repeater {
+                    id: thirdRowModel
+                    model: keyboard.parseKeyboardKeysRow3() // Access the third row's keys
+                    delegate: Key {}
+                }
+            }
 
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: console.log("Key Text : ", modelData.text)
-                    }
+            // Fourth Row (if any)
+            Row {
+                id: fourthRow
+                spacing: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                Repeater {
+                    id: fourthRowModel
+                    model: keyboard.parseKeyboardKeysRow4() // Access the fourth row's keys, if available
+                    delegate: Key {}
                 }
             }
         }
@@ -64,7 +88,11 @@ Window {
                 console.log("Selected language:", languageComboBox.currentText)
                 keyboard.setLanguage(languageComboBox.currentText)
                 keyboardComboBox.model = keyboard.parseKeyboardLayers()
-                keyGridRepeater.model = keyboard.parseKeyboardKeys()
+                keyboardComboBox.currentIndex = 0;
+                firstRowModel.model = keyboard.parseKeyboardKeysRow1()
+                secondRowModel.model = keyboard.parseKeyboardKeysRow2()
+                thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
+                fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
             }
         }
 
@@ -77,15 +105,24 @@ Window {
             onActivated: {
                 console.log("Selected layers:", keyboardComboBox.currentText)
                 keyboard.setLayer(keyboardComboBox.currentText)
-                keyGridRepeater.model = keyboard.parseKeyboardKeys();
+                firstRowModel.model = keyboard.parseKeyboardKeysRow1()
+                secondRowModel.model = keyboard.parseKeyboardKeysRow2()
+                thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
+                fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
             }
         }
     }
 
     Component.onCompleted: {
-        console.log("Key Data:", keyboard.parseKeyboardKeys());
+        console.log("Key Data | First Row : ", keyboard.parseKeyboardKeysRow1());
+        console.log("Key Data | Second Row : ", keyboard.parseKeyboardKeysRow2());
+        console.log("Key Data | Third Row : ", keyboard.parseKeyboardKeysRow3());
+        console.log("Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
         keyboard.setLanguage(languageComboBox.currentText)
         keyboardComboBox.model = keyboard.parseKeyboardLayers()
-        keyGridRepeater.model = keyboard.parseKeyboardKeys()
+        firstRowModel.model = keyboard.parseKeyboardKeysRow1()
+        secondRowModel.model = keyboard.parseKeyboardKeysRow2()
+        thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
+        fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
     }
 }

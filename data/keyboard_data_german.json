@@ -2,127 +2,127 @@
     "layers": {
         "layer1": {
             "row1": [
-                { "text": "q", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q" },
-                { "text": "w", "key": "Qt.Key_W", "alternativeUpperCaseKey": "W", "alternativeLowerCaseKey": "w" },
-                { "text": "e", "key": "Qt.Key_E", "alternativeUpperCaseKey": "E", "alternativeLowerCaseKey": "e" },
-                { "text": "r", "key": "Qt.Key_R", "alternativeUpperCaseKey": "R", "alternativeLowerCaseKey": "r" },
-                { "text": "t", "key": "Qt.Key_T", "alternativeUpperCaseKey": "T", "alternativeLowerCaseKey": "t" },
-                { "text": "y", "key": "Qt.Key_Y", "alternativeUpperCaseKey": "Y", "alternativeLowerCaseKey": "y" },
-                { "text": "u", "key": "Qt.Key_U", "alternativeUpperCaseKey": "U", "alternativeLowerCaseKey": "u" },
-                { "text": "i", "key": "Qt.Key_I", "alternativeUpperCaseKey": "I", "alternativeLowerCaseKey": "i" },
-                { "text": "o", "key": "Qt.Key_O", "alternativeUpperCaseKey": "O", "alternativeLowerCaseKey": "o" },
-                { "text": "p", "key": "Qt.Key_P", "alternativeUpperCaseKey": "P", "alternativeLowerCaseKey": "p" }
+                { "text": "q", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "w", "key": "Qt.Key_W", "alternativeUpperCaseKey": "W", "alternativeLowerCaseKey": "w", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "e", "key": "Qt.Key_E", "alternativeUpperCaseKey": "E", "alternativeLowerCaseKey": "e", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "r", "key": "Qt.Key_R", "alternativeUpperCaseKey": "R", "alternativeLowerCaseKey": "r", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "t", "key": "Qt.Key_T", "alternativeUpperCaseKey": "T", "alternativeLowerCaseKey": "t", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "y", "key": "Qt.Key_Y", "alternativeUpperCaseKey": "Y", "alternativeLowerCaseKey": "y", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "u", "key": "Qt.Key_U", "alternativeUpperCaseKey": "U", "alternativeLowerCaseKey": "u", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "i", "key": "Qt.Key_I", "alternativeUpperCaseKey": "I", "alternativeLowerCaseKey": "i", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "o", "key": "Qt.Key_O", "alternativeUpperCaseKey": "O", "alternativeLowerCaseKey": "o", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "p", "key": "Qt.Key_P", "alternativeUpperCaseKey": "P", "alternativeLowerCaseKey": "p", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row2": [
-                { "text": "a", "key": "Qt.Key_A", "alternativeUpperCaseKey": "A", "alternativeLowerCaseKey": "a" },
-                { "text": "s", "key": "Qt.Key_S", "alternativeUpperCaseKey": "S", "alternativeLowerCaseKey": "s" },
-                { "text": "d", "key": "Qt.Key_D", "alternativeUpperCaseKey": "D", "alternativeLowerCaseKey": "d" },
-                { "text": "f", "key": "Qt.Key_F", "alternativeUpperCaseKey": "F", "alternativeLowerCaseKey": "f" },
-                { "text": "g", "key": "Qt.Key_G", "alternativeUpperCaseKey": "G", "alternativeLowerCaseKey": "g" },
-                { "text": "h", "key": "Qt.Key_H", "alternativeUpperCaseKey": "H", "alternativeLowerCaseKey": "h" },
-                { "text": "j", "key": "Qt.Key_J", "alternativeUpperCaseKey": "J", "alternativeLowerCaseKey": "j" },
-                { "text": "k", "key": "Qt.Key_K", "alternativeUpperCaseKey": "K", "alternativeLowerCaseKey": "k" },
-                { "text": "l", "key": "Qt.Key_L", "alternativeUpperCaseKey": "L", "alternativeLowerCaseKey": "l" }
+                { "text": "a", "key": "Qt.Key_A", "alternativeUpperCaseKey": "A", "alternativeLowerCaseKey": "a", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "s", "key": "Qt.Key_S", "alternativeUpperCaseKey": "S", "alternativeLowerCaseKey": "s", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "d", "key": "Qt.Key_D", "alternativeUpperCaseKey": "D", "alternativeLowerCaseKey": "d", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "f", "key": "Qt.Key_F", "alternativeUpperCaseKey": "F", "alternativeLowerCaseKey": "f", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "g", "key": "Qt.Key_G", "alternativeUpperCaseKey": "G", "alternativeLowerCaseKey": "g", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "h", "key": "Qt.Key_H", "alternativeUpperCaseKey": "H", "alternativeLowerCaseKey": "h", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "j", "key": "Qt.Key_J", "alternativeUpperCaseKey": "J", "alternativeLowerCaseKey": "j", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "k", "key": "Qt.Key_K", "alternativeUpperCaseKey": "K", "alternativeLowerCaseKey": "k", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "l", "key": "Qt.Key_L", "alternativeUpperCaseKey": "L", "alternativeLowerCaseKey": "l", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row3": [
-                { "text": "\u21E7", "key": "caps_toggle" },
-                { "text": "z", "key": "Qt.Key_Z", "alternativeUpperCaseKey": "Z", "alternativeLowerCaseKey": "z" },
-                { "text": "x", "key": "Qt.Key_X", "alternativeUpperCaseKey": "X", "alternativeLowerCaseKey": "x" },
-                { "text": "c", "key": "Qt.Key_C", "alternativeUpperCaseKey": "C", "alternativeLowerCaseKey": "c" },
-                { "text": "v", "key": "Qt.Key_V", "alternativeUpperCaseKey": "V", "alternativeLowerCaseKey": "v" },
-                { "text": "b", "key": "Qt.Key_B", "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "b" },
-                { "text": "n", "key": "Qt.Key_N", "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "n" },
-                { "text": "m", "key": "Qt.Key_M", "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "m" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace" }
+                { "text": "\u21E7", "key": "caps_toggle", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "z", "key": "Qt.Key_Z", "alternativeUpperCaseKey": "Z", "alternativeLowerCaseKey": "z", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "x", "key": "Qt.Key_X", "alternativeUpperCaseKey": "X", "alternativeLowerCaseKey": "x", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "c", "key": "Qt.Key_C", "alternativeUpperCaseKey": "C", "alternativeLowerCaseKey": "c", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "v", "key": "Qt.Key_V", "alternativeUpperCaseKey": "V", "alternativeLowerCaseKey": "v", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "b", "key": "Qt.Key_B", "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "b", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "n", "key": "Qt.Key_N", "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "n", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "m", "key": "Qt.Key_M", "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "m", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row4": [
-                { "text": "?123", "key": "symbols_numbers" },
-                { "text": "space", "key": "Qt.Key_Space" },
-                { "text": "\u2713", "key": "Qt.Key_Return" },
-                { "text": "\u2717", "key": "Qt.Key_Escape" }
+                { "text": "?123", "key": "symbols_numbers", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
             ]
         },
 
         "layer2": {
             "row1": [
-                { "text": "1", "key": "Qt.Key_1" },
-                { "text": "2", "key": "Qt.Key_2" },
-                { "text": "3", "key": "Qt.Key_3" },
-                { "text": "4", "key": "Qt.Key_4" },
-                { "text": "5", "key": "Qt.Key_5" },
-                { "text": "6", "key": "Qt.Key_6" },
-                { "text": "7", "key": "Qt.Key_7" },
-                { "text": "8", "key": "Qt.Key_8" },
-                { "text": "9", "key": "Qt.Key_9" },
-                { "text": "0", "key": "Qt.Key_0" }
+                { "text": "1", "key": "Qt.Key_1", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "2", "key": "Qt.Key_2", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "3", "key": "Qt.Key_3", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "4", "key": "Qt.Key_4", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "5", "key": "Qt.Key_5", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "6", "key": "Qt.Key_6", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "7", "key": "Qt.Key_7", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "8", "key": "Qt.Key_8", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "9", "key": "Qt.Key_9", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "0", "key": "Qt.Key_0", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row2": [
-                { "text": "-", "key": "Qt.Key_Minus" },
-                { "text": "/", "key": "Qt.Key_Slash" },
-                { "text": ":", "key": "Qt.Key_Colon" },
-                { "text": ";", "key": "Qt.Key_Semicolon" },
-                { "text": "(", "key": "Qt.Key_ParenLeft" },
-                { "text": ")", "key": "Qt.Key_ParenRight" },
-                { "text": "$", "key": "Qt.Key_Dollar" },
-                { "text": "&", "key": "Qt.Key_Ampersand" },
-                { "text": "@", "key": "Qt.Key_At" },
-                { "text": "\"", "key": "Qt.Key_QuoteDbl" }
+                { "text": "-", "key": "Qt.Key_Minus", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "/", "key": "Qt.Key_Slash", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ":", "key": "Qt.Key_Colon", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ";", "key": "Qt.Key_Semicolon", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "(", "key": "Qt.Key_ParenLeft", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ")", "key": "Qt.Key_ParenRight", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "$", "key": "Qt.Key_Dollar", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "&", "key": "Qt.Key_Ampersand", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "@", "key": "Qt.Key_At", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "\"", "key": "Qt.Key_QuoteDbl", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row3": [
-                { "text": "#+=", "key": "special_symbols" },
-                { "text": ".", "key": "Qt.Key_Period" },
-                { "text": ",", "key": "Qt.Key_Comma" },
-                { "text": "?", "key": "Qt.Key_Question" },
-                { "text": "!", "key": "Qt.Key_Exclam" },
-                { "text": "'", "key": "Qt.Key_Apostrophe" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace" }
+                { "text": "#+=", "key": "special_symbols", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "?", "key": "Qt.Key_Question", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row4": [
-                { "text": "abc", "key": "letters" },
-                { "text": "space", "key": "Qt.Key_Space" },
-                { "text": "\u2713", "key": "Qt.Key_Return" },
-                { "text": "\u2717", "key": "Qt.Key_Escape" }
+                { "text": "abc", "key": "letters", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
             ]
         },
 
         "layer3": {
             "row1": [
-                { "text": "[", "key": "Qt.Key_BracketLeft" },
-                { "text": "]", "key": "Qt.Key_BracketRight" },
-                { "text": "{", "key": "Qt.Key_BraceLeft" },
-                { "text": "}", "key": "Qt.Key_BraceRight" },
-                { "text": "#", "key": "Qt.Key_NumberSign" },
-                { "text": "%", "key": "Qt.Key_Percent" },
-                { "text": "^", "key": "Qt.Key_AsciiCircum" },
-                { "text": "*", "key": "Qt.Key_Asterisk" },
-                { "text": "+", "key": "Qt.Key_Plus" },
-                { "text": "=", "key": "Qt.Key_Equal" }
+                { "text": "[", "key": "Qt.Key_BracketLeft", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "]", "key": "Qt.Key_BracketRight", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "{", "key": "Qt.Key_BraceLeft", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "}", "key": "Qt.Key_BraceRight", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "#", "key": "Qt.Key_NumberSign", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "%", "key": "Qt.Key_Percent", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "^", "key": "Qt.Key_AsciiCircum", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "*", "key": "Qt.Key_Asterisk", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "+", "key": "Qt.Key_Plus", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "=", "key": "Qt.Key_Equal", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row2": [
-                { "text": "_", "key": "Qt.Key_Underscore" },
-                { "text": "\\", "key": "Qt.Key_Backslash" },
-                { "text": "|", "key": "Qt.Key_Bar" },
-                { "text": "~", "key": "Qt.Key_Tilde" },
-                { "text": "<", "key": "Qt.Key_Less" },
-                { "text": ">", "key": "Qt.Key_Greater" },
-                { "text": "£", "key": "Qt.Key_Sterling" },
-                { "text": "¥", "key": "Qt.Key_Yen" },
-                { "text": ".", "key": "Qt.Key_Period" }
+                { "text": "_", "key": "Qt.Key_Underscore", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "\\", "key": "Qt.Key_Backslash", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "|", "key": "Qt.Key_Bar", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "~", "key": "Qt.Key_Tilde", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "<", "key": "Qt.Key_Less", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ">", "key": "Qt.Key_Greater", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "£", "key": "Qt.Key_Sterling", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "¥", "key": "Qt.Key_Yen", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row3": [
-                { "text": "123", "key": "numbers_symbols" },
-                { "text": ".", "key": "Qt.Key_Period" },
-                { "text": ",", "key": "Qt.Key_Comma" },
-                { "text": "?", "key": "Qt.Key_Question" },
-                { "text": "!", "key": "Qt.Key_Exclam" },
-                { "text": "'", "key": "Qt.Key_Apostrophe" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace" }
+                { "text": "123", "key": "numbers_symbols", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "?", "key": "Qt.Key_Question", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
             ],
             "row4": [
-                { "text": "abc", "key": "letters" },
-                { "text": "space", "key": "Qt.Key_Space" },
-                { "text": "\u2713", "key": "Qt.Key_Return" },
-                { "text": "\u2717", "key": "Qt.Key_Escape" }
+                { "text": "abc", "key": "letters", "width": 60, "height": 60, "color": "#424949" },
+                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
             ]
         }
     }
