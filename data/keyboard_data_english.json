@@ -38,8 +38,8 @@
             "row4": [
                 { "text": "?123", "key": "symbols_numbers", "width": 60, "height": 60, "color": "#424949" },
                 { "text": "space", "key": "Qt.Key_Space", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
             ]
         },
 

@@ -33,21 +33,21 @@ Window {
                 model: keyboard.parseKeyboardKeys()
 
                 delegate: Rectangle {
-                    width: 60
-                    height: 60
-                    color: "#424949"
+                    width: modelData.width
+                    height: modelData.height
+                    color: modelData.color
                     radius: 5
 
                     Text {
                         anchors.centerIn: parent
-                        text: modelData
+                        text: modelData.text
                         font.pixelSize: 24
                         color: "white"
                     }
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: console.log("Key Text : ", model.text)
+                        onClicked: console.log("Key Text : ", modelData.text)
                     }
                 }
             }

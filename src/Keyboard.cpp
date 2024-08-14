@@ -63,9 +63,16 @@ QVariantList Keyboard::parseKeyboardKeys() const {
         KeyboardLayer* layer = m_layers[m_currentLayer];
         for (auto it = layer->rows().constBegin(); it != layer->rows().constEnd(); ++it) {
             KeyboardRow* row = it.value();
-            for (const KeyboardKey* key : row->keys()) { // Use range-based for loop
-                // Extract the text from the key before appending it to the list
-                list.append(key->text()); // Directly access key using the pointer
+            for (const KeyboardKey* key : row->keys()) {
+                QVariantMap keyData;
+                keyData["text"] = key->text();
+                keyData["key"] = key->key();
+                keyData["altUpperKey"] = key->alternativeUpperCaseKey();
+                keyData["altLowerKey"] = key->alternativeLowerCaseKey();
+                keyData["color"] = key->color();
+                keyData["width"] = key->width();
+                keyData["height"] = key->height();
+                list.append(keyData);
             }
         }
     } else {
