@@ -17,13 +17,13 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
         QString altUpperKey = keyObject["alternativeUpperCaseKey"].toString();
         QString altLowerKey = keyObject["alternativeLowerCaseKey"].toString();
         QString color = keyObject["color"].toString();
-        int width = keyObject["width"].toInt();
-        int height = keyObject["height"].toInt();
+        QString width = keyObject["width"].toString();
+        QString height = keyObject["height"].toString();
         addKey(text, key, altUpperKey, altLowerKey, color, width, height);
     }
 }
 
-void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, int width, int height)
+void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height)
 {
     m_keys.append(new KeyboardKey(text, key, altUpperKey, altLowerKey, color, width, height, this));
 }

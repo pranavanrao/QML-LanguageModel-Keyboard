@@ -3,11 +3,15 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.15
 import VirtualKeyboard 1.0
 
+import "./components"
+
 Window {
-    width: 800
-    height: 480
+    width: 600
+    height: 300
     visible: true
     title: qsTr("Virtual Keyboard")
+
+    color: "#000000"
 
     LanguageData {
         id: languages
@@ -17,62 +21,77 @@ Window {
         id: keyboard
     }
 
-    Column {
-        spacing: 10
+    Rectangle {
+        id: root
         anchors.fill: parent
-        anchors.margins: 50
+        anchors.margins: 10
+        color: "#000000"
 
         Column {
             id: keyboardColumn
-            spacing: 10
-
-            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            height: parent.height*0.8
+            spacing: keyboardColumn.height*0.03
 
             // First Row
             Row {
                 id: firstRow
-                spacing: 5
+                spacing: parent.width * 0.011
+
                 anchors.horizontalCenter: parent.horizontalCenter
                 Repeater {
                     id: firstRowModel
-                    model: keyboard.parseKeyboardKeysRow1()  // Access the first row's keys
-                    delegate: Key {}
+                    model: keyboard.parseKeyboardKeysRow1()
+                    delegate: Key {
+                        width: eval(modelData.width)
+                        height: eval(modelData.height)
+                    }
                 }
             }
 
             // Second Row
             Row {
                 id: secondRow
-                spacing: 5
+                spacing: parent.width * 0.011
+
                 anchors.horizontalCenter: parent.horizontalCenter
                 Repeater {
                     id: secondRowModel
-                    model: keyboard.parseKeyboardKeysRow2() // Access the second row's keys
-                    delegate: Key {}
+                    model: keyboard.parseKeyboardKeysRow2()
+                    delegate: Key {
+                        width: eval(modelData.width)
+                        height: eval(modelData.height)
+                    }
                 }
             }
 
             // Third Row
             Row {
                 id: thirdRow
-                spacing: 5
+                spacing: parent.width * 0.011
                 anchors.horizontalCenter: parent.horizontalCenter
                 Repeater {
                     id: thirdRowModel
-                    model: keyboard.parseKeyboardKeysRow3() // Access the third row's keys
-                    delegate: Key {}
+                    model: keyboard.parseKeyboardKeysRow3()
+                    delegate: Key {
+                        width: eval(modelData.width)
+                        height: eval(modelData.height)
+                    }
                 }
             }
 
-            // Fourth Row (if any)
+            // Fourth Row
             Row {
                 id: fourthRow
-                spacing: 5
+                spacing: parent.width * 0.011
                 anchors.horizontalCenter: parent.horizontalCenter
                 Repeater {
                     id: fourthRowModel
-                    model: keyboard.parseKeyboardKeysRow4() // Access the fourth row's keys, if available
-                    delegate: Key {}
+                    model: keyboard.parseKeyboardKeysRow4()
+                    delegate: Key {
+                        width: eval(modelData.width)
+                        height: eval(modelData.height)
+                    }
                 }
             }
         }
@@ -82,29 +101,12 @@ Window {
             model: languages.parseKeyboards()
             currentIndex: 1
 
+            anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
 
             onActivated: {
                 console.log("Selected language:", languageComboBox.currentText)
                 keyboard.setLanguage(languageComboBox.currentText)
-                keyboardComboBox.model = keyboard.parseKeyboardLayers()
-                keyboardComboBox.currentIndex = 0;
-                firstRowModel.model = keyboard.parseKeyboardKeysRow1()
-                secondRowModel.model = keyboard.parseKeyboardKeysRow2()
-                thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
-                fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
-            }
-        }
-
-        ComboBox {
-            id: keyboardComboBox
-            model: keyboard.parseKeyboardLayers()
-
-            anchors.horizontalCenter: parent.horizontalCenter
-
-            onActivated: {
-                console.log("Selected layers:", keyboardComboBox.currentText)
-                keyboard.setLayer(keyboardComboBox.currentText)
                 firstRowModel.model = keyboard.parseKeyboardKeysRow1()
                 secondRowModel.model = keyboard.parseKeyboardKeysRow2()
                 thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
@@ -119,7 +121,6 @@ Window {
         console.log("Key Data | Third Row : ", keyboard.parseKeyboardKeysRow3());
         console.log("Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
         keyboard.setLanguage(languageComboBox.currentText)
-        keyboardComboBox.model = keyboard.parseKeyboardLayers()
         firstRowModel.model = keyboard.parseKeyboardKeysRow1()
         secondRowModel.model = keyboard.parseKeyboardKeysRow2()
         thirdRowModel.model = keyboard.parseKeyboardKeysRow3()

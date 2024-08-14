@@ -2,127 +2,127 @@
     "layers": {
         "layer1": {
             "row1": [
-                { "text": "q", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "w", "key": "Qt.Key_W", "alternativeUpperCaseKey": "W", "alternativeLowerCaseKey": "w", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "e", "key": "Qt.Key_E", "alternativeUpperCaseKey": "E", "alternativeLowerCaseKey": "e", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "r", "key": "Qt.Key_R", "alternativeUpperCaseKey": "R", "alternativeLowerCaseKey": "r", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "t", "key": "Qt.Key_T", "alternativeUpperCaseKey": "T", "alternativeLowerCaseKey": "t", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "y", "key": "Qt.Key_Y", "alternativeUpperCaseKey": "Y", "alternativeLowerCaseKey": "y", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "u", "key": "Qt.Key_U", "alternativeUpperCaseKey": "U", "alternativeLowerCaseKey": "u", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "i", "key": "Qt.Key_I", "alternativeUpperCaseKey": "I", "alternativeLowerCaseKey": "i", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "o", "key": "Qt.Key_O", "alternativeUpperCaseKey": "O", "alternativeLowerCaseKey": "o", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "p", "key": "Qt.Key_P", "alternativeUpperCaseKey": "P", "alternativeLowerCaseKey": "p", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "q", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "w", "key": "Qt.Key_W", "alternativeUpperCaseKey": "W", "alternativeLowerCaseKey": "w", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "e", "key": "Qt.Key_E", "alternativeUpperCaseKey": "E", "alternativeLowerCaseKey": "e", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "r", "key": "Qt.Key_R", "alternativeUpperCaseKey": "R", "alternativeLowerCaseKey": "r", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "t", "key": "Qt.Key_T", "alternativeUpperCaseKey": "T", "alternativeLowerCaseKey": "t", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "y", "key": "Qt.Key_Y", "alternativeUpperCaseKey": "Y", "alternativeLowerCaseKey": "y", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "u", "key": "Qt.Key_U", "alternativeUpperCaseKey": "U", "alternativeLowerCaseKey": "u", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "i", "key": "Qt.Key_I", "alternativeUpperCaseKey": "I", "alternativeLowerCaseKey": "i", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "o", "key": "Qt.Key_O", "alternativeUpperCaseKey": "O", "alternativeLowerCaseKey": "o", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "p", "key": "Qt.Key_P", "alternativeUpperCaseKey": "P", "alternativeLowerCaseKey": "p", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row2": [
-                { "text": "a", "key": "Qt.Key_A", "alternativeUpperCaseKey": "A", "alternativeLowerCaseKey": "a", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "s", "key": "Qt.Key_S", "alternativeUpperCaseKey": "S", "alternativeLowerCaseKey": "s", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "d", "key": "Qt.Key_D", "alternativeUpperCaseKey": "D", "alternativeLowerCaseKey": "d", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "f", "key": "Qt.Key_F", "alternativeUpperCaseKey": "F", "alternativeLowerCaseKey": "f", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "g", "key": "Qt.Key_G", "alternativeUpperCaseKey": "G", "alternativeLowerCaseKey": "g", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "h", "key": "Qt.Key_H", "alternativeUpperCaseKey": "H", "alternativeLowerCaseKey": "h", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "j", "key": "Qt.Key_J", "alternativeUpperCaseKey": "J", "alternativeLowerCaseKey": "j", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "k", "key": "Qt.Key_K", "alternativeUpperCaseKey": "K", "alternativeLowerCaseKey": "k", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "l", "key": "Qt.Key_L", "alternativeUpperCaseKey": "L", "alternativeLowerCaseKey": "l", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "a", "key": "Qt.Key_A", "alternativeUpperCaseKey": "A", "alternativeLowerCaseKey": "a", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "s", "key": "Qt.Key_S", "alternativeUpperCaseKey": "S", "alternativeLowerCaseKey": "s", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "d", "key": "Qt.Key_D", "alternativeUpperCaseKey": "D", "alternativeLowerCaseKey": "d", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "f", "key": "Qt.Key_F", "alternativeUpperCaseKey": "F", "alternativeLowerCaseKey": "f", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "g", "key": "Qt.Key_G", "alternativeUpperCaseKey": "G", "alternativeLowerCaseKey": "g", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "h", "key": "Qt.Key_H", "alternativeUpperCaseKey": "H", "alternativeLowerCaseKey": "h", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "j", "key": "Qt.Key_J", "alternativeUpperCaseKey": "J", "alternativeLowerCaseKey": "j", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "k", "key": "Qt.Key_K", "alternativeUpperCaseKey": "K", "alternativeLowerCaseKey": "k", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "l", "key": "Qt.Key_L", "alternativeUpperCaseKey": "L", "alternativeLowerCaseKey": "l", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row3": [
-                { "text": "\u21E7", "key": "caps_toggle", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "z", "key": "Qt.Key_Z", "alternativeUpperCaseKey": "Z", "alternativeLowerCaseKey": "z", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "x", "key": "Qt.Key_X", "alternativeUpperCaseKey": "X", "alternativeLowerCaseKey": "x", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "c", "key": "Qt.Key_C", "alternativeUpperCaseKey": "C", "alternativeLowerCaseKey": "c", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "v", "key": "Qt.Key_V", "alternativeUpperCaseKey": "V", "alternativeLowerCaseKey": "v", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "b", "key": "Qt.Key_B", "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "b", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "n", "key": "Qt.Key_N", "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "n", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "m", "key": "Qt.Key_M", "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "m", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "\u21E7", "key": "caps_toggle", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "z", "key": "Qt.Key_Z", "alternativeUpperCaseKey": "Z", "alternativeLowerCaseKey": "z", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "x", "key": "Qt.Key_X", "alternativeUpperCaseKey": "X", "alternativeLowerCaseKey": "x", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "c", "key": "Qt.Key_C", "alternativeUpperCaseKey": "C", "alternativeLowerCaseKey": "c", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "v", "key": "Qt.Key_V", "alternativeUpperCaseKey": "V", "alternativeLowerCaseKey": "v", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "b", "key": "Qt.Key_B", "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "b", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "n", "key": "Qt.Key_N", "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "n", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "m", "key": "Qt.Key_M", "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "m", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row4": [
-                { "text": "?123", "key": "symbols_numbers", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
-                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
-                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
+                { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red" }
             ]
         },
 
         "layer2": {
             "row1": [
-                { "text": "1", "key": "Qt.Key_1", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "2", "key": "Qt.Key_2", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "3", "key": "Qt.Key_3", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "4", "key": "Qt.Key_4", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "5", "key": "Qt.Key_5", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "6", "key": "Qt.Key_6", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "7", "key": "Qt.Key_7", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "8", "key": "Qt.Key_8", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "9", "key": "Qt.Key_9", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "0", "key": "Qt.Key_0", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "1", "key": "Qt.Key_1", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "2", "key": "Qt.Key_2", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "3", "key": "Qt.Key_3", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "4", "key": "Qt.Key_4", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "5", "key": "Qt.Key_5", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "6", "key": "Qt.Key_6", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "7", "key": "Qt.Key_7", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "8", "key": "Qt.Key_8", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "9", "key": "Qt.Key_9", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "0", "key": "Qt.Key_0", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row2": [
-                { "text": "-", "key": "Qt.Key_Minus", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "/", "key": "Qt.Key_Slash", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ":", "key": "Qt.Key_Colon", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ";", "key": "Qt.Key_Semicolon", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "(", "key": "Qt.Key_ParenLeft", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ")", "key": "Qt.Key_ParenRight", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "$", "key": "Qt.Key_Dollar", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "&", "key": "Qt.Key_Ampersand", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "@", "key": "Qt.Key_At", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\"", "key": "Qt.Key_QuoteDbl", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "-", "key": "Qt.Key_Minus", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "/", "key": "Qt.Key_Slash", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ":", "key": "Qt.Key_Colon", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ";", "key": "Qt.Key_Semicolon", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "(", "key": "Qt.Key_ParenLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ")", "key": "Qt.Key_ParenRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "$", "key": "Qt.Key_Dollar", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "&", "key": "Qt.Key_Ampersand", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "@", "key": "Qt.Key_At", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\"", "key": "Qt.Key_QuoteDbl", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row3": [
-                { "text": "#+=", "key": "special_symbols", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ",", "key": "Qt.Key_Comma", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "?", "key": "Qt.Key_Question", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "!", "key": "Qt.Key_Exclam", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "'", "key": "Qt.Key_Apostrophe", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "#+=", "key": "special_symbols", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "?", "key": "Qt.Key_Question", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row4": [
-                { "text": "abc", "key": "letters", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
-                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
-                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
+                { "text": "abc", "key": "letters", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red" }
             ]
         },
 
         "layer3": {
             "row1": [
-                { "text": "[", "key": "Qt.Key_BracketLeft", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "]", "key": "Qt.Key_BracketRight", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "{", "key": "Qt.Key_BraceLeft", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "}", "key": "Qt.Key_BraceRight", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "#", "key": "Qt.Key_NumberSign", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "%", "key": "Qt.Key_Percent", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "^", "key": "Qt.Key_AsciiCircum", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "*", "key": "Qt.Key_Asterisk", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "+", "key": "Qt.Key_Plus", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "=", "key": "Qt.Key_Equal", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "[", "key": "Qt.Key_BracketLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "]", "key": "Qt.Key_BracketRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "{", "key": "Qt.Key_BraceLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "}", "key": "Qt.Key_BraceRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "#", "key": "Qt.Key_NumberSign", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "%", "key": "Qt.Key_Percent", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "^", "key": "Qt.Key_AsciiCircum", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "*", "key": "Qt.Key_Asterisk", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "+", "key": "Qt.Key_Plus", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "=", "key": "Qt.Key_Equal", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row2": [
-                { "text": "_", "key": "Qt.Key_Underscore", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\\", "key": "Qt.Key_Backslash", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "|", "key": "Qt.Key_Bar", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "~", "key": "Qt.Key_Tilde", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "<", "key": "Qt.Key_Less", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ">", "key": "Qt.Key_Greater", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "£", "key": "Qt.Key_Sterling", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "¥", "key": "Qt.Key_Yen", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "_", "key": "Qt.Key_Underscore", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\\", "key": "Qt.Key_Backslash", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "|", "key": "Qt.Key_Bar", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "~", "key": "Qt.Key_Tilde", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "<", "key": "Qt.Key_Less", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ">", "key": "Qt.Key_Greater", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "£", "key": "Qt.Key_Sterling", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "¥", "key": "Qt.Key_Yen", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row3": [
-                { "text": "123", "key": "numbers_symbols", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ".", "key": "Qt.Key_Period", "width": 60, "height": 60, "color": "#424949" },
-                { "text": ",", "key": "Qt.Key_Comma", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "?", "key": "Qt.Key_Question", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "!", "key": "Qt.Key_Exclam", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "'", "key": "Qt.Key_Apostrophe", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": 60, "height": 60, "color": "#424949" }
+                { "text": "123", "key": "numbers_symbols", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "?", "key": "Qt.Key_Question", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2190", "key": "Qt.Key_Backspace", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#7b7b7b" }
             ],
             "row4": [
-                { "text": "abc", "key": "letters", "width": 60, "height": 60, "color": "#424949" },
-                { "text": "space", "key": "Qt.Key_Space", "width": 300, "height": 60, "color": "#424949" },
-                { "text": "\u2713", "key": "Qt.Key_Return", "width": 60, "height": 60, "color": "green" },
-                { "text": "\u2717", "key": "Qt.Key_Escape", "width": 60, "height": 60, "color": "red" }
+                { "text": "abc", "key": "letters", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#7b7b7b" },
+                { "text": "\u2713", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green" },
+                { "text": "\u2717", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red" }
             ]
         }
     }
