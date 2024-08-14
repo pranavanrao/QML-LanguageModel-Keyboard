@@ -18,14 +18,47 @@ Window {
     }
 
     Column {
-        spacing: 2
+        spacing: 10
         anchors.fill: parent
+        anchors.margins: 50
+
+        Grid {
+            id: keyGrid
+            rows: 4
+            spacing: 5
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Repeater {
+                id: keyGridRepeater
+                model: keyboard.parseKeyboardKeys()
+
+                delegate: Rectangle {
+                    width: 60
+                    height: 60
+                    color: "#424949"
+                    radius: 5
+
+                    Text {
+                        anchors.centerIn: parent
+                        text: modelData
+                        font.pixelSize: 24
+                        color: "white"
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: console.log("Key Text : ", model.text)
+                    }
+                }
+            }
+        }
 
         ComboBox {
             id: languageComboBox
-            width: parent.width
             model: languages.parseKeyboards()
             currentIndex: 1
+
+            anchors.horizontalCenter: parent.horizontalCenter
 
             onActivated: {
                 console.log("Selected language:", languageComboBox.currentText)
@@ -37,8 +70,9 @@ Window {
 
         ComboBox {
             id: keyboardComboBox
-            width: parent.width
             model: keyboard.parseKeyboardLayers()
+
+            anchors.horizontalCenter: parent.horizontalCenter
 
             onActivated: {
                 console.log("Selected layers:", keyboardComboBox.currentText)
@@ -46,37 +80,12 @@ Window {
                 keyGridRepeater.model = keyboard.parseKeyboardKeys();
             }
         }
-
-        Grid {
-            id: keyGrid
-            width: parent.width
-            rows: 4
-            spacing: 5
-
-            Repeater {
-                id: keyGridRepeater
-                model: keyboard.parseKeyboardKeys()
-
-                delegate: Rectangle {
-                    width: 60
-                    height: 60
-                    color: "lightgray"
-                    border.color: "black"
-                    radius: 5
-
-                    Text {
-                        anchors.centerIn: parent
-                        text: modelData
-                        font.pixelSize: 20
-                    }
-                }
-            }
-        }
     }
 
     Component.onCompleted: {
+        console.log("Key Data:", keyboard.parseKeyboardKeys());
         keyboard.setLanguage(languageComboBox.currentText)
         keyboardComboBox.model = keyboard.parseKeyboardLayers()
-        keyGrid.model = keyboard.parseKeyboardKeys()
+        keyGridRepeater.model = keyboard.parseKeyboardKeys()
     }
 }

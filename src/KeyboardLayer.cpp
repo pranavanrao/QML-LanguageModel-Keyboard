@@ -37,10 +37,10 @@ QMap<QString, KeyboardRow *> KeyboardLayer::rows() const
 KeyboardRow *KeyboardLayer::getRow(const QString &rowName) const
 {
     if (m_rows.contains(rowName)) {
-        return m_rows[rowName]; // Return the KeyboardRow associated with the rowName
+        return m_rows[rowName];
     } else {
-        qWarning() << "Row" << rowName << "not found"; // Log a warning if the row is not found
-        return nullptr; // Return nullptr if the row does not exist
+        qWarning() << "Row" << rowName << "not found";
+        return nullptr;
     }
 }
 
@@ -48,7 +48,7 @@ QVariantList KeyboardLayer::getRowKeys() const
 {
     QVariantList rowKeysList;
     for (const auto& row : m_rows.keys()) {
-        rowKeysList.append(row); // Append row keys in the order they were added
+        rowKeysList.append(row);
     }
     return rowKeysList;
 }

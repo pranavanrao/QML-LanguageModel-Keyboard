@@ -88,16 +88,13 @@ void Keyboard::setLanguage(const QString &language)
     QJsonDocument doc(QJsonDocument::fromJson(jsonData));
     QJsonObject jsonObject = doc.object();
 
-    // Clear the existing layers
     qDeleteAll(m_layers);
     m_layers.clear();
 
-    // Initialize the new language data
     initializeFromJson(jsonObject);
 
-    // Optionally set a default layer after changing language
     if (!m_layers.isEmpty()) {
-        m_currentLayer = m_layers.keys().first();  // Set the first available layer as the default
+        m_currentLayer = m_layers.keys().first();
     } else {
         m_currentLayer.clear();
     }

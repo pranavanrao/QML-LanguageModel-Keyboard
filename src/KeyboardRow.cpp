@@ -16,13 +16,16 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
         QString key = keyObject["key"].toString();
         QString altUpperKey = keyObject["alternativeUpperCaseKey"].toString();
         QString altLowerKey = keyObject["alternativeLowerCaseKey"].toString();
-        addKey(text, key, altUpperKey, altLowerKey);
+        QString color = keyObject["color"].toString();
+        int width = keyObject["width"].toInt();
+        int height = keyObject["height"].toInt();
+        addKey(text, key, altUpperKey, altLowerKey, color, width, height);
     }
 }
 
-void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey)
+void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, int width, int height)
 {
-    m_keys.append(new KeyboardKey(text, key, altUpperKey, altLowerKey, this));
+    m_keys.append(new KeyboardKey(text, key, altUpperKey, altLowerKey, color, width, height, this));
 }
 
 void KeyboardRow::printKeyboardKeys() const
@@ -36,7 +39,13 @@ void KeyboardRow::printKeyboardKeys() const
                  << ", Upper Case: "
                  << key->alternativeUpperCaseKey()
                  << ", Lower Case: "
-                 << key->alternativeLowerCaseKey();
+                 << key->alternativeLowerCaseKey()
+                 << ", Color: "
+                 << key->color()
+                 << ", Width: "
+                 << key->width()
+                 << ", Height: "
+                 << key->height();
     }
     qDebug() << Qt::endl;
 }
@@ -50,7 +59,7 @@ QVariantList KeyboardRow::getKeys() const
 {
     QVariantList keysList;
     for (const auto& key : m_keys) {
-        keysList.append(key->text()); // Assuming KeyboardKey has a text() method
+        keysList.append(key->text());
     }
     return keysList;
 }
