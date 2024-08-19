@@ -75,6 +75,7 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
                 keyData["color"] = key->color();
                 keyData["width"] = key->width();
                 keyData["height"] = key->height();
+                keyData["pressedColor"] = key->pressedColor();
                 list.append(keyData);
             }
         } else {

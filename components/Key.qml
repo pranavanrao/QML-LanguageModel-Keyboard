@@ -46,5 +46,13 @@ Rectangle {
             thirdRowModel.model = keyboard.parseKeyboardKeysRow3();
             fourthRowModel.model = keyboard.parseKeyboardKeysRow4();
         }
+
+        onPressed: {
+            keyRect.color = modelData.pressedColor;
+        }
+
+        onReleased: {
+            keyRect.color = modelData.color;
+        }
     }
 }

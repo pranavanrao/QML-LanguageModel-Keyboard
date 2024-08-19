@@ -1,6 +1,6 @@
 #include "KeyboardKey.h"
 
-KeyboardKey::KeyboardKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, QObject *parent)
+KeyboardKey::KeyboardKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, QObject *parent)
     : QObject(parent),
     m_text(text),
     m_key(key),
@@ -8,7 +8,8 @@ KeyboardKey::KeyboardKey(const QString &text, const QString &key, const QString 
     m_altLowerKey(altLowerKey),
     m_color(color),
     m_width(width),
-    m_height(height)
+    m_height(height),
+    m_pressedColor(pressedColor)
 {}
 
 QString KeyboardKey::text() const
@@ -44,4 +45,9 @@ QString KeyboardKey::width() const
 QString KeyboardKey::height() const
 {
     return m_height;
+}
+
+QString KeyboardKey::pressedColor() const
+{
+    return m_pressedColor;
 }

@@ -7,7 +7,7 @@ class KeyboardKey : public QObject
 {
     Q_OBJECT
 public:
-    explicit KeyboardKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, QObject *parent = nullptr);
+    explicit KeyboardKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, QObject *parent = nullptr);
 
     QString text() const;
     QString key() const;
@@ -16,6 +16,7 @@ public:
     QString color() const;
     QString width() const;
     QString height() const;
+    QString pressedColor() const;
 
 signals:
 
@@ -27,6 +28,7 @@ private:
     QString m_color;
     QString m_width;
     QString m_height;
+    QString m_pressedColor;
 };
 
 #endif // KEYBOARDKEY_H
