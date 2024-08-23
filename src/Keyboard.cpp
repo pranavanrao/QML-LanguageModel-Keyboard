@@ -69,6 +69,7 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
             for (const KeyboardKey* key : row->keys()) {
                 QVariantMap keyData;
                 keyData["text"] = key->text();
+                keyData["image"] = key->image();
                 keyData["key"] = key->key();
                 keyData["altUpperKey"] = key->alternativeUpperCaseKey();
                 keyData["altLowerKey"] = key->alternativeLowerCaseKey();

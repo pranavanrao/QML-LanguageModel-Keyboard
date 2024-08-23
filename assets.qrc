@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/caps-lock-normal.png</file>
+        <file>images/caps-lock-pressed.png</file>
+        <file>images/back.png</file>
+        <file>images/back-pressed.png</file>
+        <file>images/check.png</file>
+        <file>images/check-pressed.png</file>
+        <file>images/close.png</file>
+        <file>images/close--pressed.png</file>
+    </qresource>
+</RCC>

@@ -5,9 +5,20 @@ Rectangle {
     color: modelData.color
     radius: 10
 
+    Image {
+        id: keyImage
+        anchors.centerIn: parent
+        source: modelData.image
+        visible: modelData.image !== undefined
+        width: keyRect.height * 0.6
+        height: keyRect.height * 0.6
+    }
+
     Text {
+        id: keyText
         anchors.centerIn: parent
         text: modelData.text
+        visible: modelData.text !== undefined
         font.pixelSize: keyRect.height * 0.6
         font.weight: Font.DemiBold
         color: "white"

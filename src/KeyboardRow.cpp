@@ -13,6 +13,7 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
     for (const QJsonValue &value : json) {
         QJsonObject keyObject = value.toObject();
         QString text = keyObject["text"].toString();
+        QString image = keyObject["image"].toString();
         QString key = keyObject["key"].toString();
         QString altUpperKey = keyObject["alternativeUpperCaseKey"].toString();
         QString altLowerKey = keyObject["alternativeLowerCaseKey"].toString();
@@ -20,13 +21,13 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
         QString width = keyObject["width"].toString();
         QString height = keyObject["height"].toString();
         QString pressedColor = keyObject["pressedColor"].toString();
-        addKey(text, key, altUpperKey, altLowerKey, color, width, height, pressedColor);
+        addKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor);
     }
 }
 
-void KeyboardRow::addKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor)
+void KeyboardRow::addKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor)
 {
-    m_keys.append(new KeyboardKey(text, key, altUpperKey, altLowerKey, color, width, height, pressedColor, this));
+    m_keys.append(new KeyboardKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor, this));
 }
 
 void KeyboardRow::printKeyboardKeys() const
@@ -35,6 +36,8 @@ void KeyboardRow::printKeyboardKeys() const
     for (const KeyboardKey* key : m_keys) { // Iterate over the list of keys
         qDebug() << "Key text: "
                  << key->text()
+                 << "Key Image: "
+                 << key->image()
                  << ", Key code: "
                  << key->key()
                  << ", Upper Case: "

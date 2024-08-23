@@ -7,9 +7,10 @@ class KeyboardKey : public QObject
 {
     Q_OBJECT
 public:
-    explicit KeyboardKey(const QString &text, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, QObject *parent = nullptr);
+    explicit KeyboardKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, QObject *parent = nullptr);
 
     QString text() const;
+    QString image() const;
     QString key() const;
     QString alternativeUpperCaseKey() const;
     QString alternativeLowerCaseKey() const;
@@ -18,10 +19,9 @@ public:
     QString height() const;
     QString pressedColor() const;
 
-signals:
-
 private:
     QString m_text;
+    QString m_image;
     QString m_key;
     QString m_altUpperKey;
     QString m_altLowerKey;
