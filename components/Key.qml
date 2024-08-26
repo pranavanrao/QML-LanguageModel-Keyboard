@@ -61,14 +61,11 @@ Rectangle {
 
             default:
                 console.log("No action defined for key:", modelData.text);
-                return; // Exit if no matching case
+                return;
             }
 
             // Update rows after changing the layer
-            firstRowModel.model = keyboard.parseKeyboardKeysRow1();
-            secondRowModel.model = keyboard.parseKeyboardKeysRow2();
-            thirdRowModel.model = keyboard.parseKeyboardKeysRow3();
-            fourthRowModel.model = keyboard.parseKeyboardKeysRow4();
+            loadAllRows();
         }
 
         onPressed: {
@@ -78,5 +75,9 @@ Rectangle {
         onReleased: {
             keyRect.color = modelData.color;
         }
+    }
+
+    Component.onCompleted: {
+        keyRect.color = modelData.color;
     }
 }

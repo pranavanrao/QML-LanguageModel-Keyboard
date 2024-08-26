@@ -15,6 +15,13 @@ Item {
         id: keyboard
     }
 
+    function loadAllRows() {
+        firstRowModel.model = keyboard.parseKeyboardKeysRow1();
+        secondRowModel.model = keyboard.parseKeyboardKeysRow2();
+        thirdRowModel.model = keyboard.parseKeyboardKeysRow3();
+        fourthRowModel.model = keyboard.parseKeyboardKeysRow4();
+    }
+
     Column {
         id: keyboardColumn
         width: parent.width
@@ -89,10 +96,7 @@ Item {
         console.log("Key Data | Second Row : ", keyboard.parseKeyboardKeysRow2());
         console.log("Key Data | Third Row : ", keyboard.parseKeyboardKeysRow3());
         console.log("Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
-        keyboard.setLanguage(languageComboBox.currentText)
-        firstRowModel.model = keyboard.parseKeyboardKeysRow1()
-        secondRowModel.model = keyboard.parseKeyboardKeysRow2()
-        thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
-        fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
+        keyboard.setLanguage(languageComboBox.currentText);
+        loadAllRows();
     }
 }

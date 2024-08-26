@@ -14,9 +14,6 @@ ComboBox {
     onActivated: {
         console.log("Selected language:", languageComboBox.currentText)
         keyboard.setLanguage(languageComboBox.currentText)
-        firstRowModel.model = keyboard.parseKeyboardKeysRow1()
-        secondRowModel.model = keyboard.parseKeyboardKeysRow2()
-        thirdRowModel.model = keyboard.parseKeyboardKeysRow3()
-        fourthRowModel.model = keyboard.parseKeyboardKeysRow4()
+        loadAllRows();
     }
 }
