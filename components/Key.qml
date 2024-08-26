@@ -24,8 +24,21 @@ Rectangle {
         color: "white"
     }
 
+    LanguageComboBox {
+        id: langCombo
+        width: parent.width
+        height: parent.height
+        visible: false
+    }
+
     MouseArea {
         anchors.fill: parent
+        onPressAndHold: {
+            if (modelData.text === "space") {
+                langCombo.popup.open();
+            }
+        }
+
         onClicked: {
             console.log("Key Text : ", modelData.text)
 

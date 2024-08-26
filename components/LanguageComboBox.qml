@@ -6,6 +6,8 @@ ComboBox {
     model: languages.parseKeyboards()
     currentIndex: 1
 
+    z: 1000
+
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
 

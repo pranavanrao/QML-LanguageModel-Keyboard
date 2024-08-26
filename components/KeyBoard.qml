@@ -84,8 +84,6 @@ Item {
         }
     }
 
-    LanguageComboBox {}
-
     Component.onCompleted: {
         console.log("Key Data | First Row : ", keyboard.parseKeyboardKeysRow1());
         console.log("Key Data | Second Row : ", keyboard.parseKeyboardKeysRow2());
