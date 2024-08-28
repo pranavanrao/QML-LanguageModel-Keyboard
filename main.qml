@@ -15,43 +15,10 @@ Window {
         anchors.fill: parent
         spacing: 2
 
-        Rectangle {
+        InputBox {
+            id: inputMain
             width: parent.width
             height: parent.height*0.2
-            color: "#00000000"
-
-            Row {
-                spacing: 2
-                anchors.fill: parent
-                anchors.margins: parent.height*0.1
-
-                Text {
-                    id: inputText
-                    text: "SSID : "
-                    color: "#FFFFFF"
-                    font.pixelSize: parent.height*0.6
-                }
-
-                TextInput {
-                    id: inputField
-                    width: parent.width*0.8
-                    height: parent.height
-                    color: "#FFFFFF"
-                    focus: true
-                    font.pixelSize: inputField.height*0.6
-                    font.weight: Font.DemiBold
-                    horizontalAlignment: Text.AlignRight
-                    inputMethodHints: Qt.ImhRightToLeft
-                }
-            }
-
-            Rectangle {
-                width: parent.width
-                height: 2
-                color: "#FFFFFF"
-                anchors.bottom: parent.bottom
-                anchors.left: parent.left
-            }
         }
 
         KeyBoard {
@@ -59,7 +26,7 @@ Window {
             height: parent.height*0.78
 
             onKeyPressed: {
-                inputField.text += key
+                inputMain.inputText += key
             }
         }
     }

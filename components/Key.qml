@@ -40,7 +40,7 @@ Rectangle {
         }
 
         onClicked: {
-            console.log("Key Text : ", modelData.text);
+            console.log("Key Text : ", modelData.text || modelData.key);
 
             switch (modelData.text || modelData.image) {
             case "?123":
@@ -64,8 +64,8 @@ Rectangle {
                 break;
 
             case "qrc:/images/back.png":
-                if (inputField.text.length > 0) {
-                    inputField.text = inputField.text.substring(0, inputField.text.length - 1);
+                if (inputMain.inputText.length > 0) {
+                    inputMain.inputText = inputMain.inputText.substring(0, inputMain.inputText.length - 1);
                 }
                 break;
 

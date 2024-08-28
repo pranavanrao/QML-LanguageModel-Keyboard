@@ -4,5 +4,6 @@
         <file>components/Key.qml</file>
         <file>components/KeyBoard.qml</file>
         <file>components/LanguageComboBox.qml</file>
+        <file>components/InputBox.qml</file>
     </qresource>
 </RCC>
