@@ -17,19 +17,32 @@ Window {
 
         Rectangle {
             width: parent.width
-            height: parent.height*0.18
+            height: parent.height*0.2
             color: "#00000000"
 
-            anchors.topMargin: 2
+            Row {
+                spacing: 2
+                anchors.fill: parent
+                anchors.margins: parent.height*0.1
 
-            TextInput {
-                id: inputField
-                width: parent.width
-                height: parent.height
-                color: "#FFFFFF"
-                focus: true
-                font.pixelSize: inputField.height*0.6
-                font.weight: Font.DemiBold
+                Text {
+                    id: inputText
+                    text: "SSID : "
+                    color: "#FFFFFF"
+                    font.pixelSize: parent.height*0.6
+                }
+
+                TextInput {
+                    id: inputField
+                    width: parent.width*0.8
+                    height: parent.height
+                    color: "#FFFFFF"
+                    focus: true
+                    font.pixelSize: inputField.height*0.6
+                    font.weight: Font.DemiBold
+                    horizontalAlignment: Text.AlignRight
+                    inputMethodHints: Qt.ImhRightToLeft
+                }
             }
 
             Rectangle {
@@ -43,7 +56,7 @@ Window {
 
         KeyBoard {
             width: parent.width
-            height: parent.height*0.8
+            height: parent.height*0.78
 
             onKeyPressed: {
                 inputField.text += key
