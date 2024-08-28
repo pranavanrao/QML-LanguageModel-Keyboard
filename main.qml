@@ -11,5 +11,43 @@ Window {
 
     color: "#000000"
 
-    KeyBoard {}
+    Column {
+        anchors.fill: parent
+        spacing: 2
+
+        Rectangle {
+            width: parent.width
+            height: parent.height*0.18
+            color: "#00000000"
+
+            anchors.topMargin: 2
+
+            TextInput {
+                id: inputField
+                width: parent.width
+                height: parent.height
+                color: "#FFFFFF"
+                focus: true
+                font.pixelSize: inputField.height*0.6
+                font.weight: Font.DemiBold
+            }
+
+            Rectangle {
+                width: parent.width
+                height: 2
+                color: "#FFFFFF"
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+            }
+        }
+
+        KeyBoard {
+            width: parent.width
+            height: parent.height*0.8
+
+            onKeyPressed: {
+                inputField.text += key
+            }
+        }
+    }
 }

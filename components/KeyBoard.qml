@@ -4,8 +4,10 @@ import VirtualKeyboard 1.0
 
 Item {
     id: root
-    anchors.fill: parent
+    // anchors.fill: parent
     anchors.margins: 10
+
+    signal keyPressed(string key);
 
     LanguageData {
         id: languages
@@ -25,7 +27,7 @@ Item {
     Column {
         id: keyboardColumn
         width: parent.width
-        height: parent.height*0.8
+        height: parent.height
         spacing: keyboardColumn.height*0.03
 
         // First Row
@@ -98,5 +100,9 @@ Item {
         console.log("Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
         keyboard.setLanguage(languageComboBox.currentText);
         loadAllRows();
+    }
+
+    LanguageComboBox {
+        visible: false
     }
 }

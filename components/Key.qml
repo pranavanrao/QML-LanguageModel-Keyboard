@@ -40,9 +40,9 @@ Rectangle {
         }
 
         onClicked: {
-            console.log("Key Text : ", modelData.text)
+            console.log("Key Text : ", modelData.text);
 
-            switch (modelData.text) {
+            switch (modelData.text || modelData.image) {
             case "?123":
                 keyboard.setLayer("layer2"); // Change to Layer 2
                 break;
@@ -59,8 +59,18 @@ Rectangle {
                 keyboard.setLayer("layer2"); // Change to Layer 2
                 break;
 
+            case "space":
+                root.keyPressed(" ");
+                break;
+
+            case "qrc:/images/back.png":
+                if (inputField.text.length > 0) {
+                    inputField.text = inputField.text.substring(0, inputField.text.length - 1);
+                }
+                break;
+
             default:
-                console.log("No action defined for key:", modelData.text);
+                root.keyPressed(modelData.text);
                 return;
             }
 
@@ -79,5 +89,9 @@ Rectangle {
 
     Component.onCompleted: {
         keyRect.color = modelData.color;
+    }
+
+    Component.onDestruction: {
+        console.log("Key Component Destroyed:", modelData.text);
     }
 }
