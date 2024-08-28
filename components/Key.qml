@@ -37,6 +37,11 @@ Rectangle {
             if (modelData.text === "space") {
                 langCombo.popup.open();
             }
+
+            if (modelData.key === "Qt.Key_Backspace") {
+                console.log("Long press on back key!!!")
+                inputMain.inputText = "";
+            }
         }
 
         onClicked: {

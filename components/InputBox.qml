@@ -27,6 +27,7 @@ Item {
             font.weight: Font.DemiBold
             horizontalAlignment: Text.AlignRight
             inputMethodHints: Qt.ImhRightToLeft
+            clip: true
         }
     }
 

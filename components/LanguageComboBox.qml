@@ -12,6 +12,7 @@ ComboBox {
     anchors.horizontalCenter: parent.horizontalCenter
 
     onActivated: {
+        inputMain.inputText = "";
         console.log("Selected language:", languageComboBox.currentText)
         keyboard.setLanguage(languageComboBox.currentText)
         loadAllRows();
