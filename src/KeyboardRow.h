@@ -13,7 +13,7 @@ class KeyboardRow : public QObject
 
 public:
     explicit KeyboardRow(QObject *parent = nullptr);
-    void addKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor);
+    void addKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, const QList<QString> &altKey);
     void initializeFromJson(const QJsonArray &json);
     void printKeyboardKeys() const;
 

@@ -2,7 +2,7 @@
     "layers": {
         "layer1": {
             "row1": [
-                { "text": "q", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "q", "key": "Qt.Key_Q", "alternativeKeys": ["ā", "á", "à", "ä", "â", "å"], "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "w", "key": "Qt.Key_W", "alternativeUpperCaseKey": "W", "alternativeLowerCaseKey": "w", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "e", "key": "Qt.Key_E", "alternativeUpperCaseKey": "E", "alternativeLowerCaseKey": "e", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "r", "key": "Qt.Key_R", "alternativeUpperCaseKey": "R", "alternativeLowerCaseKey": "r", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },

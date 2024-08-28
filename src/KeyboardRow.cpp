@@ -21,13 +21,18 @@ void KeyboardRow::initializeFromJson(const QJsonArray &json)
         QString width = keyObject["width"].toString();
         QString height = keyObject["height"].toString();
         QString pressedColor = keyObject["pressedColor"].toString();
-        addKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor);
+        QList<QString> altKey;
+        QJsonArray altKeyArray = keyObject["alternativeKeys"].toArray();
+        for (const QJsonValue &altValue : altKeyArray) {
+            altKey.append(altValue.toString());
+        }
+        addKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor, altKey);
     }
 }
 
-void KeyboardRow::addKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor)
+void KeyboardRow::addKey(const QString &text, const QString &image, const QString &key, const QString &altUpperKey, const QString &altLowerKey, const QString &color, const QString width, const QString height, const QString pressedColor, const QList<QString> &altKey)
 {
-    m_keys.append(new KeyboardKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor, this));
+    m_keys.append(new KeyboardKey(text, image, key, altUpperKey, altLowerKey, color, width, height, pressedColor, altKey, this));
 }
 
 void KeyboardRow::printKeyboardKeys() const
@@ -51,7 +56,9 @@ void KeyboardRow::printKeyboardKeys() const
                  << ", Height: "
                  << key->height()
                  << ", PressedColor: "
-                 << key->pressedColor();
+                 << key->pressedColor()
+                 << ", Alternative Key: "
+                 << key->altKey();
     }
     qDebug() << Qt::endl;
 }
