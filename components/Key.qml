@@ -47,7 +47,7 @@ Rectangle {
         onClicked: {
             console.log("Key Text : ", modelData.text || modelData.key);
 
-            switch (modelData.text || modelData.image) {
+            switch (modelData.text || modelData.key) {
             case "?123":
                 keyboard.setLayer("layer2"); // Change to Layer 2
                 break;
@@ -68,7 +68,7 @@ Rectangle {
                 root.keyPressed(" ");
                 break;
 
-            case "qrc:/images/back.png":
+            case "Qt.Key_Backspace":
                 if (inputMain.inputText.length > 0) {
                     inputMain.inputText = inputMain.inputText.substring(0, inputMain.inputText.length - 1);
                 }
