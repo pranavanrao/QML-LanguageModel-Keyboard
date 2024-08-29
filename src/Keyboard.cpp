@@ -68,15 +68,20 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
             KeyboardRow* row = rows.at(rowIndex);  // Use QList's at() method
             for (const KeyboardKey* key : row->keys()) {
                 QVariantMap keyData;
+                QVariantList altKeyData;
                 keyData["text"] = key->text();
                 keyData["image"] = key->image();
                 keyData["key"] = key->key();
-                keyData["altUpperKey"] = key->alternativeUpperCaseKey();
-                keyData["altLowerKey"] = key->alternativeLowerCaseKey();
+                keyData["alternativeUpperCaseKey"] = key->alternativeUpperCaseKey();
+                keyData["alternativeLowerCaseKey"] = key->alternativeLowerCaseKey();
                 keyData["color"] = key->color();
                 keyData["width"] = key->width();
                 keyData["height"] = key->height();
                 keyData["pressedColor"] = key->pressedColor();
+                for (const QString& altKey : key->altKey()) {
+                    altKeyData.append(altKey);
+                }
+                keyData["alternativeKeys"] = altKeyData;
                 list.append(keyData);
             }
         } else {
@@ -85,6 +90,7 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
     } else {
         qWarning() << "Current layer or row is null or not found";
     }
+    qDebug() << "Pranav : " << list;
     return list;
 }
 

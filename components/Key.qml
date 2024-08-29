@@ -5,6 +5,11 @@ Rectangle {
     color: modelData.color
     radius: 10
 
+    ToggleKey {
+        id:togglebtn
+        visible: false
+    }
+
     Image {
         id: keyImage
         anchors.centerIn: parent
@@ -42,9 +47,13 @@ Rectangle {
                 console.log("Long press on back key!!!")
                 inputMain.inputText = "";
             }
+
+            console.log("Alt Keys : ", modelData.alternativeKeys);
+            togglebtn.visible = true;
         }
 
         onClicked: {
+            togglebtn.visible = false;
             console.log("Key Text : ", modelData.text || modelData.key);
 
             switch (modelData.text || modelData.key) {
