@@ -21,12 +21,12 @@ void KeyboardLayer::initializeFromJson(const QJsonObject &json)
 
 void KeyboardLayer::printKeyboardRows() const
 {
-    qDebug() << "Printing all rows : ";
+    qDebug() << Q_FUNC_INFO << "Printing all rows : ";
     for (auto it = m_rows.constBegin(); it != m_rows.constEnd(); ++it) {
-        qDebug() << it.key();
+        qDebug() << Q_FUNC_INFO << it.key();
         it.value()->printKeyboardKeys();
     }
-    qDebug() << Qt::endl;
+    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QMap<QString, KeyboardRow *> KeyboardLayer::rows() const
@@ -39,7 +39,7 @@ KeyboardRow *KeyboardLayer::getRow(const QString &rowName) const
     if (m_rows.contains(rowName)) {
         return m_rows[rowName];
     } else {
-        qWarning() << "Row" << rowName << "not found";
+        qWarning() << Q_FUNC_INFO << "Row" << rowName << "not found";
         return nullptr;
     }
 }

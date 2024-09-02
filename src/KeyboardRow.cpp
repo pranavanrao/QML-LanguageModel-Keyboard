@@ -37,9 +37,9 @@ void KeyboardRow::addKey(const QString &text, const QString &image, const QStrin
 
 void KeyboardRow::printKeyboardKeys() const
 {
-    qDebug() << "Printing all keys :";
+    qDebug() << Q_FUNC_INFO << "Printing all keys :";
     for (const KeyboardKey* key : m_keys) { // Iterate over the list of keys
-        qDebug() << "Key text: "
+        qDebug() << Q_FUNC_INFO << "Key text: "
                  << key->text()
                  << "Key Image: "
                  << key->image()
@@ -60,7 +60,7 @@ void KeyboardRow::printKeyboardKeys() const
                  << ", Alternative Key: "
                  << key->altKey();
     }
-    qDebug() << Qt::endl;
+    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QList<KeyboardKey *> KeyboardRow::keys() const

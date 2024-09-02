@@ -12,7 +12,7 @@ LanguageModel::LanguageModel(QObject *parent)
     QString filename = ":/data/languages_data.json";
     QFile file(filename);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Failed to open" << filename;
+        qWarning() << Q_FUNC_INFO << "Failed to open" << filename;
         return;
     }
 
@@ -42,26 +42,26 @@ Keyboard *LanguageModel::getKeyboard(const QString &language) const
     if (m_keyboards.contains(language)) {
         return m_keyboards[language];
     } else {
-        qDebug() << "Keyboard for" << language << "not found";
+        qDebug() << Q_FUNC_INFO << "Keyboard for" << language << "not found";
         return nullptr;
     }
 }
 
 void LanguageModel::printKeyboards() const
 {
-    qDebug() << "All Language Keyboards available :";
+    qDebug() << Q_FUNC_INFO << "All Language Keyboards available :";
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
-        qDebug() << it.key();
+        qDebug() << Q_FUNC_INFO << it.key();
         // it.value()->printKeyBoardLayers();
     }
-    qDebug() << Qt::endl;
+    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QVariantList LanguageModel::parseKeyboards() const {
     QVariantList list;
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
         list.append(it.key());
-        qDebug() << "Languages : " << it.key();
+        qDebug() << Q_FUNC_INFO << "Languages : " << it.key();
     }
     return list;
 }

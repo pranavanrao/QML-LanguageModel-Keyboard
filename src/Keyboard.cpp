@@ -24,12 +24,12 @@ void Keyboard::initializeFromJson(const QJsonObject &json)
 
 void Keyboard::printKeyBoardLayers() const
 {
-    qDebug() << "Printing all the layers :";
+    qDebug() << Q_FUNC_INFO << "Printing all the layers :";
     for (auto it = m_layers.constBegin(); it != m_layers.constEnd(); ++it) {
-        qDebug() << it.key();
+        qDebug() << Q_FUNC_INFO << it.key();
         it.value()->printKeyboardRows();
     }
-    qDebug() << Qt::endl;
+    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QVariantList Keyboard::parseKeyboardLayers() const
@@ -37,7 +37,7 @@ QVariantList Keyboard::parseKeyboardLayers() const
     QVariantList list;
     for (auto it = m_layers.constBegin(); it != m_layers.constEnd(); ++it) {
         list.append(it.key());
-        qDebug() << "Layers : " << it.key();
+        qDebug() << Q_FUNC_INFO << "Layers : " << it.key();
     }
     return list;
 }
@@ -49,10 +49,10 @@ QVariantList Keyboard::parseKeyboardRows() const
         KeyboardLayer* layer = m_layers[m_currentLayer];
         for (auto it = layer->rows().constBegin(); it != layer->rows().constEnd(); ++it) {
             list.append(it.key());
-            qDebug() << "Rows: " << it.key();
+            qDebug() << Q_FUNC_INFO << "Rows: " << it.key();
         }
     } else {
-        qWarning() << "Current layer is null or not found";
+        qWarning() << Q_FUNC_INFO << "Current layer is null or not found";
     }
     return list;
 }
@@ -80,10 +80,10 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
                 list.append(keyData);
             }
         } else {
-            qWarning() << "Row index out of bounds";
+            qWarning() << Q_FUNC_INFO << "Row index out of bounds";
         }
     } else {
-        qWarning() << "Current layer or row is null or not found";
+        qWarning() << Q_FUNC_INFO << "Current layer or row is null or not found";
     }
     return list;
 }
@@ -126,7 +126,7 @@ QVariantList Keyboard::parseAltKeyForKey(const QString &keyText) const
             }
         }
     } else {
-        qWarning() << "Current layer or row is null or not found";
+        qWarning() << Q_FUNC_INFO << "Current layer or row is null or not found";
     }
     return altKeysList;
 }
@@ -137,7 +137,7 @@ void Keyboard::setLanguage(const QString &language)
     QString filename = ":/data/keyboard_data_" + language + ".json";
     QFile file(filename);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qWarning() << "Failed to open" << filename;
+        qWarning() << Q_FUNC_INFO << "Failed to open" << filename;
         return;
     }
 
@@ -156,8 +156,8 @@ void Keyboard::setLanguage(const QString &language)
         m_currentLayer.clear();
     }
 
-    qDebug() << "Current layer after setting language:" << m_currentLayer;
-    qDebug() << "Loaded layers:" << m_layers.keys();
+    qDebug() << Q_FUNC_INFO << "Current layer after setting language:" << m_currentLayer;
+    qDebug() << Q_FUNC_INFO << "Loaded layers:" << m_layers.keys();
 }
 
 void Keyboard::setLayer(const QString &layer)
@@ -165,6 +165,6 @@ void Keyboard::setLayer(const QString &layer)
     if (!layer.isEmpty() && m_layers.contains(layer)) {
         m_currentLayer = layer;
     } else {
-        qWarning() << "Layer" << layer << "not found or layer name is empty";
+        qWarning() << Q_FUNC_INFO << "Layer" << layer << "not found or layer name is empty";
     }
 }
