@@ -11,9 +11,11 @@ ComboBox {
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
 
+    property string filename: "component/LanguageComboBox.qml"
+
     onActivated: {
         inputMain.inputText = "";
-        console.log("Selected language:", languageComboBox.currentText)
+        console.log(filename, " Selected language:", languageComboBox.currentText)
         keyboard.setLanguage(languageComboBox.currentText)
         loadAllRows();
     }

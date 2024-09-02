@@ -5,7 +5,7 @@ Popup {
     id: togglebtn
     z: 1000
 
-    // anchors.bottom: keyRect.top
+    property string filename: "components/ToggleKey.qml"
 
     Row {
         anchors.fill: parent
@@ -29,7 +29,7 @@ Popup {
                         root.keyPressed(modelData.alternativeKeys)
                         togglebtn.visible = false;
                     }
-                    onEntered: console.log("Alt keys : ", modelData.alternativeKeys)
+                    onEntered: console.log(filename, " Alt keys : ", modelData.alternativeKeys)
                 }
             }
         }

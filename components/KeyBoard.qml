@@ -7,6 +7,7 @@ Item {
     // anchors.fill: parent
     anchors.margins: 10
 
+    property string filename: "components/KeyBoard.qml"
     signal keyPressed(string key);
 
     LanguageData {
@@ -94,10 +95,10 @@ Item {
     }
 
     Component.onCompleted: {
-        console.log("Key Data | First Row : ", keyboard.parseKeyboardKeysRow1());
-        console.log("Key Data | Second Row : ", keyboard.parseKeyboardKeysRow2());
-        console.log("Key Data | Third Row : ", keyboard.parseKeyboardKeysRow3());
-        console.log("Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
+        console.log(filename, " Key Data | First Row : ", keyboard.parseKeyboardKeysRow1());
+        console.log(filename, " Key Data | Second Row : ", keyboard.parseKeyboardKeysRow2());
+        console.log(filename, " Key Data | Third Row : ", keyboard.parseKeyboardKeysRow3());
+        console.log(filename, " Key Data | Fourth Row : ", keyboard.parseKeyboardKeysRow4());
         keyboard.setLanguage(languageComboBox.currentText);
         loadAllRows();
     }
