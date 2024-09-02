@@ -5,6 +5,8 @@ Rectangle {
     color: modelData.color
     radius: 10
 
+    property string currentText;
+
     ToggleKey {
         id:togglebtn
         visible: false
@@ -47,8 +49,7 @@ Rectangle {
                 console.log("Long press on back key!!!")
                 inputMain.inputText = "";
             }
-
-            console.log("Alt Keys : ", modelData.alternativeKeys);
+            currentText = modelData.text
             togglebtn.visible = true;
         }
 

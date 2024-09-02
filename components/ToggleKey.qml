@@ -1,28 +1,35 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
-ComboBox {
+Popup {
     id: togglebtn
     z: 1000
-    anchors.bottom: keyRect.top
+
+    // anchors.bottom: keyRect.top
 
     Row {
+        anchors.fill: parent
+        spacing: 2
         Repeater {
-            model: keyboard.parseKeyboardKeysRow1()
+            model: keyboard.parseAltKeyForKey(currentText)
 
             delegate: Rectangle {
-                width: eval(modelData.width)/1.2
-                height: eval(modelData.height)/1.2
-                color: modelData.pressedColor
+                width: 50
+                height: 50
+                color: "grey"
                 Text {
                     anchors.centerIn: parent
-                    text: modelData.text
+                    text: modelData.alternativeKeys.toString()
                     color: "white"
                 }
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: togglebtn.visible = false;
+                    onClicked: {
+                        root.keyPressed(modelData.alternativeKeys)
+                        togglebtn.visible = false;
+                    }
+                    onEntered: console.log("Alt keys : ", modelData.alternativeKeys)
                 }
             }
         }
