@@ -5,5 +5,6 @@
         <file>components/KeyBoard.qml</file>
         <file>components/LanguageComboBox.qml</file>
         <file>components/InputBox.qml</file>
+        <file>components/ToggleKey.qml</file>
     </qresource>
 </RCC>

@@ -26,6 +26,8 @@ public:
     Q_INVOKABLE QVariantList parseKeyboardKeysRow3();
     Q_INVOKABLE QVariantList parseKeyboardKeysRow4();
 
+    Q_INVOKABLE QVariantList parseAltKeyForKey(const QString &keyText) const;
+
     Q_INVOKABLE void setLanguage(const QString &language);
     Q_INVOKABLE void setLayer(const QString &layer);
 

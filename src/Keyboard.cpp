@@ -71,8 +71,8 @@ QVariantList Keyboard::parseKeyboardKeys(int rowIndex) const {
                 keyData["text"] = key->text();
                 keyData["image"] = key->image();
                 keyData["key"] = key->key();
-                keyData["altUpperKey"] = key->alternativeUpperCaseKey();
-                keyData["altLowerKey"] = key->alternativeLowerCaseKey();
+                keyData["alternativeUpperCaseKey"] = key->alternativeUpperCaseKey();
+                keyData["alternativeLowerCaseKey"] = key->alternativeLowerCaseKey();
                 keyData["color"] = key->color();
                 keyData["width"] = key->width();
                 keyData["height"] = key->height();
@@ -102,6 +102,33 @@ QVariantList Keyboard::parseKeyboardKeysRow3() {
 
 QVariantList Keyboard::parseKeyboardKeysRow4() {
     return parseKeyboardKeys(3);  // Fourth row (if any)
+}
+
+QVariantList Keyboard::parseAltKeyForKey(const QString &keyText) const
+{
+    QVariantList altKeysList;
+    if (!m_currentLayer.isEmpty() && m_layers.contains(m_currentLayer)) {
+        KeyboardLayer* layer = m_layers[m_currentLayer];
+        for (auto it = layer->rows().constBegin(); it != layer->rows().constEnd(); ++it) {
+            KeyboardRow* row = it.value();
+            for (const KeyboardKey* key : row->keys()) {
+                if (key->text() == keyText) {
+                    for (const QString& altKey : key->altKey()) {
+                        QVariantMap keyData;
+                        keyData["alternativeKeys"] = altKey;
+                        keyData["width"] = key->width();
+                        keyData["height"] = key->height();
+                        keyData["pressedColor"] = key->pressedColor();
+                        altKeysList.append(keyData);
+                    }
+                    return altKeysList; // Return once the matching key is found
+                }
+            }
+        }
+    } else {
+        qWarning() << "Current layer or row is null or not found";
+    }
+    return altKeysList;
 }
 
 void Keyboard::setLanguage(const QString &language)
