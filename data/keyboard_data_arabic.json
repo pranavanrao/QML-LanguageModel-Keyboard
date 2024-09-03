@@ -2,37 +2,37 @@
     "layers": {
         "layer1": {
             "row1": [
-                { "text": "ض", "key": "Qt.Key_Q", "alternativeUpperCaseKey": "ض", "alternativeLowerCaseKey": "ض", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ص", "key": "Qt.Key_W", "alternativeUpperCaseKey": "ص", "alternativeLowerCaseKey": "ص", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ث", "key": "Qt.Key_E", "alternativeUpperCaseKey": "ث", "alternativeLowerCaseKey": "ث", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ق", "key": "Qt.Key_R", "alternativeUpperCaseKey": "ق", "alternativeLowerCaseKey": "ق", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ف", "key": "Qt.Key_T", "alternativeUpperCaseKey": "ف", "alternativeLowerCaseKey": "ف", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "غ", "key": "Qt.Key_Y", "alternativeUpperCaseKey": "غ", "alternativeLowerCaseKey": "غ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ع", "key": "Qt.Key_U", "alternativeUpperCaseKey": "ع", "alternativeLowerCaseKey": "ع", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ه", "key": "Qt.Key_I", "alternativeUpperCaseKey": "ه", "alternativeLowerCaseKey": "ه", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "خ", "key": "Qt.Key_O", "alternativeUpperCaseKey": "خ", "alternativeLowerCaseKey": "خ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ح", "key": "Qt.Key_P", "alternativeUpperCaseKey": "ح", "alternativeLowerCaseKey": "ح", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "text": "ض", "key": "Qt.Key_Q", "alternativeKeys": ["ص", "ث"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ص", "key": "Qt.Key_W", "alternativeKeys": ["ض", "ث"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ث", "key": "Qt.Key_E", "alternativeKeys": ["ض", "ص"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ق", "key": "Qt.Key_R", "alternativeKeys": ["ف", "غ"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ف", "key": "Qt.Key_T", "alternativeKeys": ["ق", "غ"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "غ", "key": "Qt.Key_Y", "alternativeKeys": ["ق", "ف"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ع", "key": "Qt.Key_U", "alternativeKeys": ["غ", "ه"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ه", "key": "Qt.Key_I", "alternativeKeys": ["ع", "خ"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "خ", "key": "Qt.Key_O", "alternativeKeys": ["ه", "ح"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ح", "key": "Qt.Key_P", "alternativeKeys": ["خ", "ج"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row2": [
-                { "text": "ش", "key": "Qt.Key_A", "alternativeUpperCaseKey": "ش", "alternativeLowerCaseKey": "ش", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "س", "key": "Qt.Key_S", "alternativeUpperCaseKey": "س", "alternativeLowerCaseKey": "س", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ي", "key": "Qt.Key_D", "alternativeUpperCaseKey": "ي", "alternativeLowerCaseKey": "ي", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ب", "key": "Qt.Key_F", "alternativeUpperCaseKey": "ب", "alternativeLowerCaseKey": "ب", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ل", "key": "Qt.Key_G", "alternativeUpperCaseKey": "ل", "alternativeLowerCaseKey": "ل", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ا", "key": "Qt.Key_H", "alternativeUpperCaseKey": "ا", "alternativeLowerCaseKey": "ا", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ت", "key": "Qt.Key_J", "alternativeUpperCaseKey": "ت", "alternativeLowerCaseKey": "ت", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ن", "key": "Qt.Key_K", "alternativeUpperCaseKey": "ن", "alternativeLowerCaseKey": "ن", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "م", "key": "Qt.Key_L", "alternativeUpperCaseKey": "م", "alternativeLowerCaseKey": "م", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "text": "ش", "key": "Qt.Key_A", "alternativeKeys": ["س", "ي"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "س", "key": "Qt.Key_S", "alternativeKeys": ["ش", "ي"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ي", "key": "Qt.Key_D", "alternativeKeys": ["س", "ب"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ب", "key": "Qt.Key_F", "alternativeKeys": ["ي", "ل"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ل", "key": "Qt.Key_G", "alternativeKeys": ["ب", "ا"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ا", "key": "Qt.Key_H", "alternativeKeys": ["ل", "ت"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ت", "key": "Qt.Key_J", "alternativeKeys": ["ا", "ن"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ن", "key": "Qt.Key_K", "alternativeKeys": ["ت", "م"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "م", "key": "Qt.Key_L", "alternativeKeys": ["ن", "ك"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row3": [
                 { "image": "qrc:/images/caps-lock-normal.png", "key": "caps_toggle", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ك", "key": "Qt.Key_Z", "alternativeUpperCaseKey": "ك", "alternativeLowerCaseKey": "ك", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ط", "key": "Qt.Key_X", "alternativeUpperCaseKey": "ط", "alternativeLowerCaseKey": "ط", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ئ", "key": "Qt.Key_C", "alternativeUpperCaseKey": "ئ", "alternativeLowerCaseKey": "ئ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ء", "key": "Qt.Key_V", "alternativeUpperCaseKey": "ء", "alternativeLowerCaseKey": "ء", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ؤ", "key": "Qt.Key_B", "alternativeUpperCaseKey": "ؤ", "alternativeLowerCaseKey": "ؤ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "ر", "key": "Qt.Key_N", "alternativeUpperCaseKey": "ر", "alternativeLowerCaseKey": "ر", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "text": "لا", "key": "Qt.Key_M", "alternativeUpperCaseKey": "لا", "alternativeLowerCaseKey": "لا", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ك", "key": "Qt.Key_Z", "alternativeKeys": ["م", "ط"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ط", "key": "Qt.Key_X", "alternativeKeys": ["ك", "ئ"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ئ", "key": "Qt.Key_C", "alternativeKeys": ["ط", "ء"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ء", "key": "Qt.Key_V", "alternativeKeys": ["ئ", "ؤ"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ؤ", "key": "Qt.Key_B", "alternativeKeys": ["ء", "ر"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ر", "key": "Qt.Key_N", "alternativeKeys": ["ؤ", "لا"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "لا", "key": "Qt.Key_M", "alternativeKeys": ["ر", "ى"], "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row4": [
