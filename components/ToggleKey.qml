@@ -3,9 +3,10 @@ import QtQuick.Controls 2.15
 
 Popup {
     id: togglebtn
-    z: 1000
     width: contentWidth
     height: contentHeight
+
+    z: 1000
 
     property string filename: "components/ToggleKey.qml"
 
@@ -29,7 +30,8 @@ Popup {
             delegate: Rectangle {
                 width: 50
                 height: 50
-                color: "grey"
+                color: modelData.pressedColor
+                radius: 10
                 Text {
                     anchors.centerIn: parent
                     text: modelData.alternativeKeys.toString()
