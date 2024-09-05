@@ -6,6 +6,7 @@ Rectangle {
     radius: 10
 
     property string currentText;
+    property int keyIndex: index
 
     ToggleKey {
         id:togglebtn
@@ -51,6 +52,7 @@ Rectangle {
             }
             currentText = modelData.text
             togglebtn.visible = true;
+            console.log("Index of the key : ", keyIndex)
         }
 
         onClicked: {

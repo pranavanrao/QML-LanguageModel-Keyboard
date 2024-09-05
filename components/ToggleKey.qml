@@ -7,6 +7,7 @@ Popup {
     height: contentHeight
 
     z: 1000
+    y: -60
 
     property string filename: "components/ToggleKey.qml"
 
@@ -55,6 +56,14 @@ Popup {
     onVisibleChanged: {
         if (togglebtn.visible) {
             backgroundRect.color = "black"
+
+            if (keyIndex >= 4 && keyIndex <= 6) {
+                togglebtn.x = -60
+            }
+
+            if (keyIndex > 6) {
+                togglebtn.x = -180
+            }
         }
     }
 }
