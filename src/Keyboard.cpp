@@ -116,8 +116,7 @@ QVariantList Keyboard::parseAltKeyForKey(const QString &keyText) const
                     for (const QString& altKey : key->altKey()) {
                         QVariantMap keyData;
                         keyData["alternativeKeys"] = altKey;
-                        keyData["width"] = key->width();
-                        keyData["height"] = key->height();
+                        keyData["color"] = key->color();
                         keyData["pressedColor"] = key->pressedColor();
                         altKeysList.append(keyData);
                     }

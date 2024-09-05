@@ -6,10 +6,12 @@ Popup {
     width: contentWidth
     height: contentHeight
 
+    y: -(keyRect.height*0.5)
     z: 1000
-    y: -60
 
     property string filename: "components/ToggleKey.qml"
+    property string toggleIndex: index
+    property int modelSize: contentRowRepeater.count
 
     Rectangle {
         id: backgroundRect
@@ -23,14 +25,17 @@ Popup {
     Row {
         id: contentRow
         anchors.centerIn: parent
-        anchors.fill: parent
+        width: contentWidth
+        height: contentHeight
         spacing: 2
         Repeater {
+            id: contentRowRepeater
             model: keyboard.parseAltKeyForKey(currentText)
 
             delegate: Rectangle {
-                width: 50
-                height: 50
+                id: toggleRect
+                width: keyRect.width * 0.8
+                height: keyRect.height * 0.8
                 color: modelData.pressedColor
                 radius: 10
                 Text {
@@ -42,12 +47,22 @@ Popup {
 
                 MouseArea {
                     anchors.fill: parent
-                    cursorShape: Qt.PointingHandCursor
+
                     onClicked: {
                         root.keyPressed(modelData.alternativeKeys)
                         togglebtn.visible = false;
+                        console.log("Toggle Key Index : ", index);
                     }
+
                     onEntered: console.log(filename, " Alt keys : ", modelData.alternativeKeys)
+
+                    onPressed: {
+                        toggleRect.color = modelData.color;
+                    }
+
+                    onReleased: {
+                        toggleRect.color = modelData.pressedColor;
+                    }
                 }
             }
         }
@@ -57,12 +72,8 @@ Popup {
         if (togglebtn.visible) {
             backgroundRect.color = "black"
 
-            if (keyIndex >= 4 && keyIndex <= 6) {
-                togglebtn.x = -60
-            }
-
             if (keyIndex > 6) {
-                togglebtn.x = -180
+                togglebtn.x = -(keyRect.height * (modelSize-1))
             }
         }
     }
