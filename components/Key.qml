@@ -35,7 +35,6 @@ Rectangle {
     LanguageComboBox {
         id: langCombo
         width: parent.width
-        height: parent.height
         visible: false
     }
 

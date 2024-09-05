@@ -102,8 +102,4 @@ Item {
         keyboard.setLanguage(languageComboBox.currentText);
         loadAllRows();
     }
-
-    LanguageComboBox {
-        visible: false
-    }
 }
