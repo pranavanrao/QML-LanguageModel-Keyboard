@@ -1,22 +1,56 @@
 import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick.Controls 2.12
 
 ComboBox {
-    id: languageComboBox
+    id: control
     model: languages.parseKeyboards()
     currentIndex: 1
 
-    z: 1000
-
-    anchors.bottom: parent.bottom
-    anchors.horizontalCenter: parent.horizontalCenter
-
     property string filename: "component/LanguageComboBox.qml"
+
+    delegate: ItemDelegate {
+        width: control.width
+        contentItem: Text {
+            text: modelData
+            color: "#FFFFFF"
+            font.pixelSize: keyText.font.pixelSize * 0.7
+            elide: Text.ElideRight
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        background: Rectangle {
+            color: control.highlightedIndex === index ? "#007ACC" : "transparent"
+            radius: 10
+        }
+
+        highlighted: control.highlightedIndex === index
+    }
+
+    popup: Popup {
+        // y: control.height - 1
+        width: control.width
+        implicitHeight: contentItem.implicitHeight
+        padding: 1
+
+        contentItem: ListView {
+            clip: true
+            implicitHeight: contentHeight
+            model: control.popup.visible ? control.delegateModel : null
+            currentIndex: control.highlightedIndex
+
+            ScrollIndicator.vertical: ScrollIndicator { }
+        }
+
+        background: Rectangle {
+            color: "#444444"
+            radius: 10
+        }
+    }
 
     onActivated: {
         inputMain.inputText = "";
-        console.log(filename, " Selected language:", languageComboBox.currentText)
-        keyboard.setLanguage(languageComboBox.currentText)
+        console.log(filename, " Selected language:", control.currentText)
+        keyboard.setLanguage(control.currentText)
         loadAllRows();
     }
 }
