@@ -14,7 +14,7 @@ Window {
     InputBox {
         id: inputMain
         width: parent.width
-        height: parent.height*0.2
+        height: parent.height * 0.15
     }
 
     KeyBoard {

@@ -31,7 +31,7 @@ Item {
     Column {
         id: keyboardColumn
         width: parent.width
-        spacing: keyboardColumn.height*0.03
+        spacing: keyboardColumn.width*0.01
 
         // First Row
         Row {

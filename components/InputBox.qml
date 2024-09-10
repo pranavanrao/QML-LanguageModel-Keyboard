@@ -11,6 +11,8 @@ Item {
 
         Text {
             id: inputTitle
+            width: parent.width*0.2
+            height: parent.height
             text: "SSID : "
             color: "#FFFFFF"
             font.pixelSize: parent.height*0.6
