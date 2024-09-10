@@ -4,8 +4,11 @@ import VirtualKeyboard 1.0
 
 Item {
     id: root
-    // anchors.fill: parent
-    anchors.margins: 10
+    height: keyboardColumn.height
+    anchors {
+        leftMargin: 10
+        rightMargin: 10
+    }
 
     property string filename: "components/KeyBoard.qml"
     signal keyPressed(string key);
@@ -28,7 +31,6 @@ Item {
     Column {
         id: keyboardColumn
         width: parent.width
-        height: parent.height
         spacing: keyboardColumn.height*0.03
 
         // First Row

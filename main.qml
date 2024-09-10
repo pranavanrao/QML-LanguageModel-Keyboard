@@ -11,23 +11,18 @@ Window {
 
     color: "#000000"
 
-    Column {
-        anchors.fill: parent
-        spacing: 2
+    InputBox {
+        id: inputMain
+        width: parent.width
+        height: parent.height*0.2
+    }
 
-        InputBox {
-            id: inputMain
-            width: parent.width
-            height: parent.height*0.2
-        }
+    KeyBoard {
+        width: parent.width
+        anchors.bottom: parent.bottom
 
-        KeyBoard {
-            width: parent.width
-            height: parent.height*0.78
-
-            onKeyPressed: {
-                inputMain.inputText += key
-            }
+        onKeyPressed: {
+            inputMain.inputText += key
         }
     }
 }
