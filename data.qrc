@@ -6,5 +6,6 @@
         <file>data/keyboard_data_japanese.json</file>
         <file>data/languages_data.json</file>
         <file>data/keyboard_data_russian.json</file>
+        <file>data/keyboard_data_italian.json</file>
     </qresource>
 </RCC>
