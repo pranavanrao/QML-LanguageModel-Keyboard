@@ -8,5 +8,6 @@
         <file>data/keyboard_data_russian.json</file>
         <file>data/keyboard_data_italian.json</file>
         <file>data/keyboard_data_ukrainian.json</file>
+        <file>data/keyboard_data_greek.json</file>
     </qresource>
 </RCC>

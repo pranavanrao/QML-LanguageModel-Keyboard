@@ -1,0 +1,129 @@
+{
+    "layers": {
+        "layer1": {
+            "row1": [
+                { "text": "q", "key": "Qt.Key_Cyrillic_ZE", "alternativeKeys": [], "alternativeUpperCaseKey": "Q", "alternativeLowerCaseKey": "q", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ς", "key": "Qt.Key_Cyrillic_YO", "alternativeKeys": [], "alternativeUpperCaseKey": "ς", "alternativeLowerCaseKey": "ς", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ε", "key": "Qt.Key_Cyrillic_TSE", "alternativeKeys": [], "alternativeUpperCaseKey": "Ε", "alternativeLowerCaseKey": "ε", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ρ", "key": "Qt.Key_Cyrillic_U", "alternativeKeys": ["ῥ"], "alternativeUpperCaseKey": "Ρ", "alternativeLowerCaseKey": "ρ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "τ", "key": "Qt.Key_Cyrillic_KA", "alternativeKeys": [], "alternativeUpperCaseKey": "T", "alternativeLowerCaseKey": "τ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "υ", "key": "Qt.Key_Cyrillic_IE", "alternativeKeys": [], "alternativeUpperCaseKey": "Y", "alternativeLowerCaseKey": "υ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "θ", "key": "Qt.Key_Cyrillic_EN", "alternativeKeys": [], "alternativeUpperCaseKey": "Θ", "alternativeLowerCaseKey": "θ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ι", "key": "Qt.Key_Cyrillic_GHE", "alternativeKeys": [], "alternativeUpperCaseKey": "I", "alternativeLowerCaseKey": "ι", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "o", "key": "Qt.Key_Cyrillic_SHA", "alternativeKeys": [], "alternativeUpperCaseKey": "O", "alternativeLowerCaseKey": "o", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "π", "key": "Qt.Key_Cyrillic_SHCHA", "alternativeKeys": [], "alternativeUpperCaseKey": "Π", "alternativeLowerCaseKey": "π", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row2": [
+                { "text": "α", "key": "Qt.Key_Cyrillic_EF", "alternativeKeys": ["ά", "Ά"], "alternativeUpperCaseKey": "A", "alternativeLowerCaseKey": "α", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "σ", "key": "Qt.Key_Cyrillic_YERU", "alternativeKeys": [], "alternativeUpperCaseKey": "Σ", "alternativeLowerCaseKey": "σ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "δ", "key": "Qt.Key_Cyrillic_VE", "alternativeKeys": [], "alternativeUpperCaseKey": "Δ", "alternativeLowerCaseKey": "δ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "φ", "key": "Qt.Key_Cyrillic_A", "alternativeKeys": ["ϕ"], "alternativeUpperCaseKey": "Φ", "alternativeLowerCaseKey": "φ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "γ", "key": "Qt.Key_Cyrillic_PE", "alternativeKeys": [], "alternativeUpperCaseKey": "Γ", "alternativeLowerCaseKey": "γ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "η", "key": "Qt.Key_Cyrillic_ER", "alternativeKeys": [], "alternativeUpperCaseKey": "H", "alternativeLowerCaseKey": "η", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ξ", "key": "Qt.Key_Cyrillic_O", "alternativeKeys": [], "alternativeUpperCaseKey": "Ξ", "alternativeLowerCaseKey": "ξ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "k", "key": "Qt.Key_Cyrillic_EL", "alternativeKeys": ["ϰ"], "alternativeUpperCaseKey": "K", "alternativeLowerCaseKey": "k", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "λ", "key": "Qt.Key_Cyrillic_DE", "alternativeKeys": [], "alternativeUpperCaseKey": "Λ", "alternativeLowerCaseKey": "λ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row3": [
+                { "image": "qrc:/images/caps-lock-normal.png", "key": "caps_toggle", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ζ", "key": "Qt.Key_Cyrillic_YA", "alternativeKeys": [], "alternativeUpperCaseKey": "Z", "alternativeLowerCaseKey": "ζ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "χ", "key": "Qt.Key_Cyrillic_CHE", "alternativeKeys": [], "alternativeUpperCaseKey": "X", "alternativeLowerCaseKey": "χ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ψ", "key": "Qt.Key_Cyrillic_ES", "alternativeKeys": [], "alternativeUpperCaseKey": "Ψ", "alternativeLowerCaseKey": "ψ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ω", "key": "Qt.Key_Cyrillic_EM", "alternativeKeys": [], "alternativeUpperCaseKey": "Ω", "alternativeLowerCaseKey": "ω", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "β", "key": "Qt.Key_Cyrillic_I", "alternativeKeys": ["ϐ"], "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "β", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "ν", "key": "Qt.Key_Cyrillic_TE", "alternativeKeys": [], "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "ν", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "μ", "key": "Qt.Key_Cyrillic_SOFTSIGN", "alternativeKeys": [], "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "μ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/back.png", "key": "backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row4": [
+                { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/check.png", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green", "pressedColor": "#444444" },
+                { "image": "qrc:/images/close.png", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red", "pressedColor": "#444444" }
+            ]
+        },
+
+        "layer2": {
+            "row1": [
+                { "text": "1", "key": "Qt.Key_1", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "2", "key": "Qt.Key_2", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "3", "key": "Qt.Key_3", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "4", "key": "Qt.Key_4", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "5", "key": "Qt.Key_5", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "6", "key": "Qt.Key_6", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "7", "key": "Qt.Key_7", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "8", "key": "Qt.Key_8", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "9", "key": "Qt.Key_9", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "0", "key": "Qt.Key_0", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row2": [
+                { "text": "-", "key": "Qt.Key_Minus", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "/", "key": "Qt.Key_Slash", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ":", "key": "Qt.Key_Colon", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ";", "key": "Qt.Key_Semicolon", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "(", "key": "Qt.Key_ParenLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ")", "key": "Qt.Key_ParenRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "$", "key": "Qt.Key_Dollar", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "&", "key": "Qt.Key_Ampersand", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "@", "key": "Qt.Key_At", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "\"", "key": "Qt.Key_QuoteDbl", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row3": [
+                { "text": "#+=", "key": "special_symbols", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "?", "key": "Qt.Key_Question", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row4": [
+                { "text": "abc", "key": "letters", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/check.png", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green", "pressedColor": "#444444" },
+                { "image": "qrc:/images/close.png", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red", "pressedColor": "#444444" }
+            ]
+        },
+
+        "layer3": {
+            "row1": [
+                { "text": "[", "key": "Qt.Key_BracketLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "]", "key": "Qt.Key_BracketRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "{", "key": "Qt.Key_BraceLeft", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "}", "key": "Qt.Key_BraceRight", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "#", "key": "Qt.Key_NumberSign", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "%", "key": "Qt.Key_Percent", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "^", "key": "Qt.Key_AsciiCircum", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "*", "key": "Qt.Key_Asterisk", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "+", "key": "Qt.Key_Plus", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "=", "key": "Qt.Key_Equal", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row2": [
+                { "text": "_", "key": "Qt.Key_Underscore", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "\\", "key": "Qt.Key_Backslash", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "|", "key": "Qt.Key_Bar", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "~", "key": "Qt.Key_Tilde", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "<", "key": "Qt.Key_Less", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ">", "key": "Qt.Key_Greater", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "£", "key": "Qt.Key_Sterling", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "¥", "key": "Qt.Key_Yen", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row3": [
+                { "text": "123", "key": "numbers_symbols", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ".", "key": "Qt.Key_Period", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": ",", "key": "Qt.Key_Comma", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "?", "key": "Qt.Key_Question", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "!", "key": "Qt.Key_Exclam", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "'", "key": "Qt.Key_Apostrophe", "width": "root.width*0.1", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.2176", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+            ],
+            "row4": [
+                { "text": "abc", "key": "letters", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "text": "space", "key": "Qt.Key_Space", "width": "root.width*0.6", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
+                { "image": "qrc:/images/check.png", "key": "Qt.Key_Return", "width": "root.width*0.1", "height": "root.width*0.09", "color": "green", "pressedColor": "#444444" },
+                { "image": "qrc:/images/close.png", "key": "Qt.Key_Escape", "width": "root.width*0.1", "height": "root.width*0.09", "color": "red", "pressedColor": "#444444" }
+            ]
+        }
+    }
+}
