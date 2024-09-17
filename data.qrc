@@ -10,5 +10,6 @@
         <file>data/keyboard_data_ukrainian.json</file>
         <file>data/keyboard_data_greek.json</file>
         <file>data/keyboard_data_norwegian.json</file>
+        <file>data/keyboard_data_hebrew.json</file>
     </qresource>
 </RCC>
