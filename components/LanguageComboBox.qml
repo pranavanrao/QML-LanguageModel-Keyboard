@@ -29,7 +29,7 @@ ComboBox {
     popup: Popup {
         // y: control.height - 1
         width: control.width
-        height: root.height * 0.7
+        height: root.height * 0.9
         implicitHeight: contentItem.implicitHeight
         padding: 1
 
