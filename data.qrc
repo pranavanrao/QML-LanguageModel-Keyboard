@@ -12,5 +12,6 @@
         <file>data/keyboard_data_norwegian.json</file>
         <file>data/keyboard_data_hebrew.json</file>
         <file>data/keyboard_data_spanish.json</file>
+        <file>data/keyboard_data_french.json</file>
     </qresource>
 </RCC>
