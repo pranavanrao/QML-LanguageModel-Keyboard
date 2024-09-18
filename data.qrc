@@ -14,5 +14,6 @@
         <file>data/keyboard_data_spanish.json</file>
         <file>data/keyboard_data_french.json</file>
         <file>data/keyboard_data_korean.json</file>
+        <file>data/keyboard_data_chinese.json</file>
     </qresource>
 </RCC>
