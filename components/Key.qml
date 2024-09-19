@@ -103,6 +103,7 @@ Rectangle {
             default:
                 if (capsEnabled) {
                     root.keyPressed(modelData.alternativeUpperCaseKey ? modelData.alternativeUpperCaseKey : modelData.text.toUpperCase());
+                    capsEnabled = false;
                 } else {
                     // Otherwise, send the regular key text
                     root.keyPressed(modelData.text);
