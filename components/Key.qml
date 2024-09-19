@@ -6,7 +6,12 @@ Rectangle {
     radius: 10
 
     property string currentText;
-    property int keyIndex: index
+    property int keyIndex: index;
+
+    function switchLayer(layer) {
+        keyboard.setLayer(layer);
+        loadAllRows();
+    }
 
     ToggleKey {
         id:togglebtn
@@ -25,7 +30,13 @@ Rectangle {
     Text {
         id: keyText
         anchors.centerIn: parent
-        text: modelData.text
+        text: {
+            if (capsEnabled) {
+                return modelData.alternativeUpperCaseKey ? modelData.alternativeUpperCaseKey : modelData.text.toUpperCase();
+            } else {
+                return modelData.text;
+            }
+        }
         visible: modelData.text !== undefined
         font.pixelSize: keyRect.height * 0.6
         font.weight: Font.DemiBold
@@ -59,20 +70,24 @@ Rectangle {
             console.log("Key Text : ", modelData.text || modelData.key);
 
             switch (modelData.text || modelData.key) {
+            case "caps_toggle":
+                capsEnabled = !capsEnabled;
+                break;
+
             case "?123":
-                keyboard.setLayer("layer2"); // Change to Layer 2
+                switchLayer("layer2"); // Change to Layer 2
                 break;
 
             case "#+=":
-                keyboard.setLayer("layer3"); // Change to Layer 3
+                switchLayer("layer3"); // Change to Layer 3
                 break;
 
             case "abc":
-                keyboard.setLayer("layer1"); // Change to Layer 1
+                switchLayer("layer1"); // Change to Layer 1
                 break;
 
             case "123":
-                keyboard.setLayer("layer2"); // Change to Layer 2
+                switchLayer("layer2"); // Change to Layer 2
                 break;
 
             case "space":
@@ -86,12 +101,14 @@ Rectangle {
                 break;
 
             default:
-                root.keyPressed(modelData.text);
+                if (capsEnabled) {
+                    root.keyPressed(modelData.alternativeUpperCaseKey ? modelData.alternativeUpperCaseKey : modelData.text.toUpperCase());
+                } else {
+                    // Otherwise, send the regular key text
+                    root.keyPressed(modelData.text);
+                }
                 return;
             }
-
-            // Update rows after changing the layer
-            loadAllRows();
         }
 
         onPressed: {

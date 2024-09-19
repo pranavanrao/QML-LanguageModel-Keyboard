@@ -10,6 +10,7 @@ Item {
         rightMargin: 10
     }
 
+    property bool capsEnabled: false
     property string filename: "components/KeyBoard.qml"
     signal keyPressed(string key);
 
