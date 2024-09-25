@@ -26,7 +26,6 @@ void KeyboardLayer::printKeyboardRows() const
         qDebug() << Q_FUNC_INFO << it.key();
         it.value()->printKeyboardKeys();
     }
-    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QMap<QString, KeyboardRow *> KeyboardLayer::rows() const

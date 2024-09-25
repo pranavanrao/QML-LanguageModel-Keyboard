@@ -29,7 +29,6 @@ void Keyboard::printKeyBoardLayers() const
         qDebug() << Q_FUNC_INFO << it.key();
         it.value()->printKeyboardRows();
     }
-    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QVariantList Keyboard::parseKeyboardLayers() const

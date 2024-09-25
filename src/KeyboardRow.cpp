@@ -60,7 +60,6 @@ void KeyboardRow::printKeyboardKeys() const
                  << ", Alternative Key: "
                  << key->altKey();
     }
-    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QList<KeyboardKey *> KeyboardRow::keys() const

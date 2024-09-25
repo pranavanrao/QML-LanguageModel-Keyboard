@@ -42,7 +42,7 @@ Keyboard *LanguageModel::getKeyboard(const QString &language) const
     if (m_keyboards.contains(language)) {
         return m_keyboards[language];
     } else {
-        qDebug() << Q_FUNC_INFO << "Keyboard for" << language << "not found";
+        qWarning() << Q_FUNC_INFO << "Keyboard for" << language << "not found";
         return nullptr;
     }
 }
@@ -52,16 +52,13 @@ void LanguageModel::printKeyboards() const
     qDebug() << Q_FUNC_INFO << "All Language Keyboards available :";
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
         qDebug() << Q_FUNC_INFO << it.key();
-        // it.value()->printKeyBoardLayers();
     }
-    qDebug() << Q_FUNC_INFO << Qt::endl;
 }
 
 QVariantList LanguageModel::parseKeyboards() const {
     QVariantList list;
     for (auto it = m_keyboards.constBegin(); it != m_keyboards.constEnd(); ++it) {
         list.append(it.key());
-        qDebug() << Q_FUNC_INFO << "Languages : " << it.key();
     }
     return list;
 }
