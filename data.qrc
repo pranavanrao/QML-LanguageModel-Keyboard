@@ -32,5 +32,6 @@
         <file>data/keyboard_data_hausa.json</file>
         <file>data/keyboard_data_hawaiian.json</file>
         <file>data/keyboard_data_hungarian.json</file>
+        <file>data/keyboard_data_kazakh.json</file>
     </qresource>
 </RCC>
