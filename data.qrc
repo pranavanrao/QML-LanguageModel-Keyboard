@@ -29,5 +29,7 @@
         <file>data/keyboard_data_gothic.json</file>
         <file>data/keyboard_data_greenlandic.json</file>
         <file>data/keyboard_data_guarani.json</file>
+        <file>data/keyboard_data_hausa.json</file>
+        <file>data/keyboard_data_hawaiian.json</file>
     </qresource>
 </RCC>
