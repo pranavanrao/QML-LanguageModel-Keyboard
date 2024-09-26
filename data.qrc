@@ -28,5 +28,6 @@
         <file>data/keyboard_data_georgian.json</file>
         <file>data/keyboard_data_gothic.json</file>
         <file>data/keyboard_data_greenlandic.json</file>
+        <file>data/keyboard_data_guarani.json</file>
     </qresource>
 </RCC>
