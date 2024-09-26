@@ -33,5 +33,7 @@
         <file>data/keyboard_data_hawaiian.json</file>
         <file>data/keyboard_data_hungarian.json</file>
         <file>data/keyboard_data_kazakh.json</file>
+        <file>data/keyboard_data_icelandic.json</file>
+        <file>data/keyboard_data_irish.json</file>
     </qresource>
 </RCC>
