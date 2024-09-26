@@ -22,5 +22,6 @@
         <file>data/keyboard_data_bashkir.json</file>
         <file>data/keyboard_data_belgian.json</file>
         <file>data/keyboard_data_czech.json</file>
+        <file>data/keyboard_data_danish.json</file>
     </qresource>
 </RCC>
