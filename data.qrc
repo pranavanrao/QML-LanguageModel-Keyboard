@@ -35,5 +35,6 @@
         <file>data/keyboard_data_kazakh.json</file>
         <file>data/keyboard_data_icelandic.json</file>
         <file>data/keyboard_data_irish.json</file>
+        <file>data/keyboard_data_kyrgyz.json</file>
     </qresource>
 </RCC>
