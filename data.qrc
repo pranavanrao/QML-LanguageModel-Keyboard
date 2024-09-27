@@ -39,5 +39,6 @@
         <file>data/keyboard_data_nko.json</file>
         <file>data/keyboard_data_mangolian.json</file>
         <file>data/keyboard_data_portugese.json</file>
+        <file>data/keyboard_data_romanian.json</file>
     </qresource>
 </RCC>
