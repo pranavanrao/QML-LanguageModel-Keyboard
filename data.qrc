@@ -37,5 +37,6 @@
         <file>data/keyboard_data_irish.json</file>
         <file>data/keyboard_data_kyrgyz.json</file>
         <file>data/keyboard_data_nko.json</file>
+        <file>data/keyboard_data_mangolian.json</file>
     </qresource>
 </RCC>
