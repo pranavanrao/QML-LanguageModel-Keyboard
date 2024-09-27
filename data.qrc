@@ -40,5 +40,6 @@
         <file>data/keyboard_data_mangolian.json</file>
         <file>data/keyboard_data_portugese.json</file>
         <file>data/keyboard_data_romanian.json</file>
+        <file>data/keyboard_data_uzbek.json</file>
     </qresource>
 </RCC>
