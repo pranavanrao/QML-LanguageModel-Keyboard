@@ -35,7 +35,7 @@
                 { "text": "b", "key": "Qt.Key_B", "alternativeKeys": ["ḃ", "ƀ", "ḃ", "ɓ"], "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "b", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "n", "key": "Qt.Key_N", "alternativeKeys": ["ñ", "ň", "ņ", "ṅ"], "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "n", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "m", "key": "Qt.Key_M", "alternativeKeys": ["ṁ", "ṃ", "ṁ", "ɱ"], "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "m", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace",, "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row4": [
                 { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },

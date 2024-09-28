@@ -33,7 +33,7 @@
                 { "text": "β", "key": "Qt.Key_Beta", "alternativeKeys": ["ϐ"], "alternativeUpperCaseKey": "B", "alternativeLowerCaseKey": "β", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "ν", "key": "Qt.Key_Nu", "alternativeKeys": [], "alternativeUpperCaseKey": "N", "alternativeLowerCaseKey": "ν", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "μ", "key": "Qt.Key_Mu", "alternativeKeys": [], "alternativeUpperCaseKey": "M", "alternativeLowerCaseKey": "μ", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace",, "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row4": [
                 { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },

@@ -39,7 +39,7 @@
                 { "text": "ь", "key": "Qt.Key_Cyrillic_SOFTSIGN", "alternativeKeys": [], "alternativeUpperCaseKey": "Ь", "alternativeLowerCaseKey": "ь", "width": "root.width*0.08", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "б", "key": "Qt.Key_Cyrillic_BE", "alternativeKeys": [], "alternativeUpperCaseKey": "Б", "alternativeLowerCaseKey": "б", "width": "root.width*0.08", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "ю", "key": "Qt.Key_Cyrillic_YU", "alternativeKeys": [], "alternativeUpperCaseKey": "Ю", "alternativeLowerCaseKey": "ю", "width": "root.width*0.08", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace",, "width": "root.width*0.08", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace", "width": "root.width*0.08", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row4": [
                 { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
