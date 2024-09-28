@@ -38,7 +38,7 @@
                 { "text": "б", "key": "Qt.Key_Be", "alternativeKeys": [], "alternativeUpperCaseKey": "Б", "alternativeLowerCaseKey": "б", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "н", "key": "Qt.Key_En", "alternativeKeys": [], "alternativeUpperCaseKey": "Н", "alternativeLowerCaseKey": "н", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
                 { "text": "м", "key": "Qt.Key_Em", "alternativeKeys": [], "alternativeUpperCaseKey": "М", "alternativeLowerCaseKey": "м", "width": "root.width*0.09", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
-                { "image": "qrc:/images/back.png", "key": "backspace", "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
+                { "image": "qrc:/images/back.png", "key": "Qt.Key_Backspace",, "width": "root.width*0.1406", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" }
             ],
             "row4": [
                 { "text": "?123", "key": "symbols_numbers", "width": "root.width*0.1667", "height": "root.width*0.09", "color": "#6a6a6a", "pressedColor": "#444444" },
