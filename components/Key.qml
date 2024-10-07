@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import QtMultimedia 5.15
 
 Rectangle {
     id: keyRect
@@ -67,6 +68,7 @@ Rectangle {
 
         onClicked: {
             togglebtn.visible = false;
+            soundEffect.play();
             console.log("Key Text : ", modelData.text || modelData.key);
 
             switch (modelData.text || modelData.key) {
@@ -119,6 +121,11 @@ Rectangle {
         onReleased: {
             keyRect.color = modelData.color;
         }
+    }
+
+    Audio {
+        id: soundEffect
+        source: "qrc:/sounds/button-click-sound.wav"  // Path to your sound file
     }
 
     Component.onCompleted: {
