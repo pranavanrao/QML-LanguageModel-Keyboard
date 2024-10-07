@@ -9,5 +9,7 @@
         <file>images/close.png</file>
         <file>images/close--pressed.png</file>
         <file>sounds/button-click-sound.wav</file>
+        <file>sounds/button-cross-sound.wav</file>
+        <file>sounds/button-check-sound.wav</file>
     </qresource>
 </RCC>

@@ -102,6 +102,14 @@ Rectangle {
                 }
                 break;
 
+            case "Qt.Key_Return":
+                checkSoundEffect.play();
+                break;
+
+            case "Qt.Key_Escape":
+                crossSoundEffect.play();
+                break;
+
             default:
                 if (capsEnabled) {
                     root.keyPressed(modelData.alternativeUpperCaseKey ? modelData.alternativeUpperCaseKey : modelData.text.toUpperCase());
@@ -125,7 +133,17 @@ Rectangle {
 
     Audio {
         id: soundEffect
-        source: "qrc:/sounds/button-click-sound.wav"  // Path to your sound file
+        source: "qrc:/sounds/button-click-sound.wav"
+    }
+
+    Audio {
+        id: checkSoundEffect
+        source: "qrc:/sounds/button-check-sound.wav"
+    }
+
+    Audio {
+        id: crossSoundEffect
+        source: "qrc:/sounds/button-cross-sound.wav"
     }
 
     Component.onCompleted: {
